@@ -40,10 +40,11 @@ cd ~/massa/massa-node/
 EOF
 
 
-sudo tee /etc/systemd/system/massad.service > /dev/null <<EOF
-[Unit]
+
+echo "[Unit]
 Description=Massa Node
 After=network-online.target
+
 [Service]
 Environment="RUST_BACKTRACE=1"
 User=$USER
@@ -52,7 +53,6 @@ Restart=always
 RestartSec=3
 [Install]
 WantedBy=multi-user.target
-EOF
 
 chmod +x /root/massa/massa-node/run.sh
 systemctl daemon-reload 
