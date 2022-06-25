@@ -32,31 +32,6 @@ cd $HOME
 wget https://github.com/massalabs/massa/releases/download/TEST.11.3/massa_TEST.11.3_release_linux.tar.gz
 tar xvzf massa_TEST.11.3_release_linux.tar.gz
 
-#echo -e "\e[1m\e[32m4. Install Node Service... \e[0m" && sleep 1
-#Install Node Ke Service
-#echo "[Unit]
-#Description=Massa Node
-#After=network.target
-
-#[Service]
-#User=$USER
-#Type=simple
-#ExecStart=/root/massa/massa-node/run.sh
-#Restart=on-failure
-#RestartSec=3
-#LimitNOFILE=65535
-
-#[Install]
-#WantedBy=multi-user.target" > $HOME/massad.service
-#mv $HOME/massad.service /etc/systemd/system/
-#sudo systemctl restart systemd-journald
-#sudo systemctl daemon-reload
-#sudo systemctl enable massad
-#sudo systemctl restart massad
-#echo "==================================================="
-
-
-
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
 cd ~/massa/massa-node/
