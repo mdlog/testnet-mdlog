@@ -11,6 +11,10 @@ echo " ###       ###   ### ######      #########       #######        ##########
 echo -e "\e[0m"
 echo "================================================================================="
 
+echo -e "\e[1m\e[32m1. Delete Folder Massa dan massa.sh... \e[0m" && sleep 1
+rm -rf massa
+rm -rf massa.sh
+
 echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
 # update
 #sudo apt update 
