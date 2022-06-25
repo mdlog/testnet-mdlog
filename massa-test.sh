@@ -40,7 +40,6 @@ cd ~/massa/massa-node/
 ./massa-node |& tee logs.txt
 EOF
 
-
 sudo tee /etc/systemd/system/massad.service > /dev/null <<EOF
 [Unit]
 Description=Massa Node
@@ -54,7 +53,6 @@ RestartSec=3
 [Install]
 WantedBy=multi-user.target
 EOF
-
 
 chmod +x /root/massa/massa-node/run.sh
 systemctl daemon-reload 
