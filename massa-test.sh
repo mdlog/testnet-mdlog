@@ -13,7 +13,7 @@ echo "=================================================="
 
 echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
 # update
-sudo apt update && sudo apt upgrade -y
+sudo apt update
 
 echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
 # packages
