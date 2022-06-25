@@ -35,7 +35,6 @@ tar xvzf massa_TEST.11.3_release_linux.tar.gz
 echo -e "\e[1m\e[32m4. Install Node Service... \e[0m" && sleep 1
 #Install Node Ke Service
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
-#!/bin/bash
 cd ~/massa/massa-node/
 ./massa-node |& tee logs.txt
 EOF
