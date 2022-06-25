@@ -26,8 +26,8 @@ cd $HOME
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup toolchain install nightly
-1
 rustup default nightly
+1
 
 echo -e "\e[1m\e[32m3. Downloading and building... \e[0m" && sleep 1
 # download binary
