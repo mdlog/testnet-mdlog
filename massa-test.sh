@@ -14,7 +14,7 @@ echo "==========================================================================
 echo -e "\e[1m\e[32m1. Delete Folder Massa dan massa.sh... \e[0m" && sleep 1
 #delete
 rm -rf massa
-rm -rf massa.sh
+rm -rf massa-test.sh
 
 echo -e "\e[1m\e[32m2. Updating packages... \e[0m" && sleep 1
 # update
