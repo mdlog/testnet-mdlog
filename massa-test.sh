@@ -34,6 +34,7 @@ tar xvzf massa_TEST.11.3_release_linux.tar.gz
 cd massa/massa-node/base_config
 rm -rf config.toml
 wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/config.toml
+cd ~
 
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
