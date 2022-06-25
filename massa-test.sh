@@ -39,9 +39,7 @@ cd ~/massa/massa-node/
 ./massa-node |& tee logs.txt
 EOF
 
-
-
-echo "[Unit]
+[Unit]
 Description=Massa Node
 After=network-online.target
 
