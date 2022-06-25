@@ -3,7 +3,7 @@
 <a href="https://massa.net" target="_blank">Visit our website <img src="https://user-images.githubusercontent.com/17427126/175755888-1a279a45-4b3d-4fa5-be6b-ebab93346af4.png" width="30"/></a>
 </p>
 
-# Persyaratan Minimum PErangkat KERas
+# Persyaratan Minimum Perangkat Keras
 
  - 4CORE
  - 8GB RAM
@@ -22,4 +22,8 @@ Explorer:
 # Set Up Massa Node Secara Otomatis (OPSI 2)
 
 Anda dapat mengatur fullnode Anda dalam beberapa menit dengan menggunakan skrip otomatis di bawah ini. Ini akan meminta Anda untuk mengimport private key anda atau membuat wallet address yang baru!
+
+```
+wget -O sei.sh https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa.sh && chmod +x massa.sh && ./massa.sh
+```
 
