@@ -27,13 +27,11 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup toolchain install nightly
 rustup default nightly
-1
+echo "1"
 
 echo -e "\e[1m\e[32m3. Downloading and building... \e[0m" && sleep 1
 # download binary
 cd $HOME
 git clone --branch testnet https://github.com/massalabs/massa.git
-screen
-space
 cd massa/massa-node
 RUST_BACKTRACE=full cargo run --release |& tee logs.txt
