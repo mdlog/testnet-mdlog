@@ -63,7 +63,6 @@ cd ~/massa/massa-node/
 ./massa-node |& tee logs.txt
 EOF
 
------------------------------------------------------------------
 
 sudo tee /etc/systemd/system/massad.service > /dev/null <<EOF
 [Unit]
@@ -79,7 +78,6 @@ RestartSec=3
 WantedBy=multi-user.target
 EOF
 
--------------------------------------------------------------------
 
 chmod +x /root/massa/massa-node/run.sh
 systemctl daemon-reload 
