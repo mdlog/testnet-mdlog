@@ -9,7 +9,7 @@
  - 8GB RAM
  - 200GB Disk
 
- # Set Up Massa Node SEcara Manual (OPSI 1)
+ # Set Up Massa Node Secara Manual (OPSI 1)
 Dokumentasi Ofisial:
 >-[Instruksi Set Up Node](https://massa.readthedocs.io/en/latest/testnet/install.html)
 
