@@ -34,25 +34,23 @@ tar xvzf massa_TEST.11.3_release_linux.tar.gz
 
 echo -e "\e[1m\e[32m4. Install Node Service... \e[0m" && sleep 1
 #Install Node Ke Service
-sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
-cd ~/massa/massa-node/
-./massa-node |& tee logs.txt
-EOF
-
-[Unit]
+echo "[Unit]
 Description=Massa Node
-After=network-online.target
+After=network.target
 
 [Service]
-Environment="RUST_BACKTRACE=1
 User=$USER
+Type=simple
 ExecStart=/root/massa/massa-node/run.sh
-Restart=always
+Restart=on-failure
 RestartSec=3
-[Install]
-WantedBy=multi-user.target
+LimitNOFILE=65535
 
-chmod +x /root/massa/massa-node/run.sh
-systemctl daemon-reload 
-systemctl enable massad 
-systemctl restart massad
+[Install]
+WantedBy=multi-user.target" > $HOME/massad.service
+mv $HOME/massad.service /etc/systemd/system/
+sudo systemctl restart systemd-journald
+sudo systemctl daemon-reload
+sudo systemctl enable massad
+sudo systemctl restart massad
+echo "==================================================="
