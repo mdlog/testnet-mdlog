@@ -22,9 +22,9 @@ echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
 #sudo apt install screen
 
 # install rustup
-#cd $HOME
-#curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-#source $HOME/.cargo/env
+cd $HOME
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
 rustup toolchain install nightly
 rustup default nightly
 echo "1"
