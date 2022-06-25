@@ -18,13 +18,13 @@ rm -rf massa.sh
 
 echo -e "\e[1m\e[32m2. Updating packages... \e[0m" && sleep 1
 # update
-#sudo apt update 
+sudo apt update 
 
 echo -e "\e[1m\e[32m3. Installing dependencies... \e[0m" && sleep 1
 # packages
-#sudo apt install pkg-config curl git build-essential libssl-dev libclang-dev
-#sudo apt-get install librocksdb-dev build-essential
-#sudo apt install screen
+sudo apt install pkg-config curl git build-essential libssl-dev libclang-dev
+sudo apt-get install librocksdb-dev build-essential
+sudo apt install screen
 
 # install rustup
 cd $HOME
