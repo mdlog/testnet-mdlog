@@ -38,4 +38,4 @@ echo -e "\e[1m\e[32m3. Downloading and building... \e[0m" && sleep 1
 cd $HOME
 git clone --branch testnet https://github.com/massalabs/massa.git
 cd massa/massa-node
-nohup RUST_BACKTRACE=full cargo run --release |& tee logs.txt
+RUST_BACKTRACE=full cargo run --release |& tee logs.txt
