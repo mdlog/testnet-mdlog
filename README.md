@@ -24,6 +24,6 @@ Explorer:
 Anda dapat mengatur fullnode Anda dalam beberapa menit dengan menggunakan skrip otomatis di bawah ini. Ini akan meminta Anda untuk mengimport private key anda atau membuat wallet address yang baru!
 
 ```
-wget -O sei.sh https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa.sh && chmod +x massa.sh && ./massa.sh
+wget -O massa.sh https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa.sh && chmod +x massa.sh && ./massa.sh
 ```
 
