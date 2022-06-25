@@ -46,7 +46,7 @@ Description=Massa Node
 After=network-online.target
 
 [Service]
-Environment="RUST_BACKTRACE=1"
+# Environment="RUST_BACKTRACE=1"
 User=$USER
 ExecStart=/root/massa/massa-node/run.sh
 Restart=always
@@ -58,4 +58,3 @@ chmod +x /root/massa/massa-node/run.sh
 systemctl daemon-reload 
 systemctl enable massad 
 systemctl restart massad
-
