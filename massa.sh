@@ -28,7 +28,6 @@ echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
 # install rustup
 cd $HOME
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-echo "1"
 source $HOME/.cargo/env
 rustup toolchain install nightly
 rustup default nightly
