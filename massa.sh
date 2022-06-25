@@ -32,15 +32,6 @@ source $HOME/.cargo/env
 rustup toolchain install nightly
 echo "1"
 rustup default nightly
-echo "1"
-
-# for distinguishing " ", "\t" from "\n"
-IFS=
-
-read -n 1 key
-if [ "$key" = "" ]; then
-   echo "This was really Enter, not space, tab or something else"
-fi
 
 echo -e "\e[1m\e[32m3. Downloading and building... \e[0m" && sleep 1
 # download binary
