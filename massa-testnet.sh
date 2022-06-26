@@ -10,6 +10,13 @@ echo " ###       ###   ###    #####    #########    ###     ###    ###      ### 
 echo " ###       ###   ### ######      #########      #######       ###########    ";
 echo -e "\e[0m"
 echo "================================================================================="
+
+# set vars
+if [ ! $IP ]; then
+	read -p "Masukan IP VPS kamu: " IP
+	echo 'export IP='$IP >> $HOME/.bash_profile
+fi
+
 echo -e "\e[1m\e[32m1. Delete Folder Massa dan massa.sh... \e[0m" && sleep 1
 #delete
 rm -rf massa
