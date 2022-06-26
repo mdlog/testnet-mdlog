@@ -26,9 +26,16 @@ Anda dapat mengatur node Anda dalam beberapa menit dengan menggunakan skrip otom
 ```
 wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa-testnet.sh && chmod +x massa-testnet.sh && ./massa-testnet.sh
 ```
-Setelah proses instalasi binary dari massa selesai, akan terbuka terminal ```massa client``` jika anda belum memiliki wallet address silahkana jalankan perintah berikut di command line.
+Setelah proses instalasi binary dari massa selesai, akan terbuka terminal ```massa client``` jika anda belum memiliki ```wallet address``` silahkan jalankan perintah berikut di command line.
 
 ```
 wallet_generate_private_key
+
+```
+
+Jika anda sudah memiliki ```wallet address``` dan ingin menambahkan menggunakan ```private key``` anda bisa menjalankan perintah ini.
+
+```
+wallet_add_private_keys private_key_anda
 
 ```
