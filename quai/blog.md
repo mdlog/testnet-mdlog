@@ -79,3 +79,6 @@ Pendapat, ide, dan pernyataan yang dibagikan dalam pembaruan ini disampaikan den
 Pandangan, pendapat, dan pernyataan yang dibuat dalam pembaruan ini adalah dari penulis individu dan bukan dari institusi, Universitas, atau badan hukum mana pun yang beroperasi di dalam yurisdiksi Amerika Serikat atau di luarnya. Tidak ada hubungan antara pandangan, pendapat, dan pernyataan ini dengan entitas nirlaba atau nirlaba, terutama dengan Universitas, Yayasan, dan Agensi lain yang berlokasi di Amerika Serikat. Persepsi apa pun tentang asosiasi semacam itu murni kebetulan, dan akan segera diperbaiki jika dibawa ke perhatian kita oleh pembaca.
 
 
+sumber: https://blog.quai.network/quai-network-iron-age-testnet-b2f9c9a7a28c
+
+
