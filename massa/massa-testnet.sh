@@ -47,10 +47,10 @@ cd $HOME
 wget https://github.com/massalabs/massa/releases/download/TEST.11.3/massa_TEST.11.3_release_linux.tar.gz
 tar xvzf massa_TEST.11.3_release_linux.tar.gz
 cd massa/massa-node/base_config && rm -rf config.toml
-wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/config.toml
+wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/config.toml
 cd $HOME
 cd massa/massa-node/config
-wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa/config.toml
+wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
 sed -i -e "s/^routable_ip *=.*/routable_ip = \"$IP_SERVER\"/" $HOME/massa/massa-node/config/config.toml
 
 
