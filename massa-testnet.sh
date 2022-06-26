@@ -33,7 +33,7 @@ rm -rf massa
 rm -rf massa-test.sh
 echo -e "\e[1m\e[32m2. Updating packages... \e[0m" && sleep 1
 # update
-sudo apt-get update
+sudo apt-get update && apt-get upgrade
 sudo apt install screen
 echo -e "\e[1m\e[32m3. Installing dependencies... \e[0m" && sleep 1
 # packages
