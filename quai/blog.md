@@ -3,9 +3,9 @@
 <p style="font-size:14px" align="justify">
 
   
-Sejak kesimpulan dari Zaman Perunggu Testnet pada tanggal 23 Maret, tim Quai telah bekerja keras untuk memperbaiki jaringan. Kami sangat senang mengumumkan peluncuran Testnet ketiga kami, Testnet Zaman Besi, pada tanggal 8 Juli.
+Sejak kesimpulan dari Zaman Perunggu Testnet pada tanggal 23 Maret, tim Quai telah bekerja keras untuk memperbaiki jaringan. Kami sangat senang mengumumkan peluncuran Testnet ketiga kami, Iron Age Testnet, pada tanggal 8 Juli.
   
-  
+  ![0_kMwB8ec5jFp9e3X_](https://user-images.githubusercontent.com/17427126/175819428-80468a17-658d-4401-97d8-ad7ad409a5ab.png)
   
 
 <p style="font-size:14px" align="justify">
