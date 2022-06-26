@@ -37,3 +37,8 @@ Jika anda sudah memiliki ```wallet address``` dan ingin menambahkan menggunakan 
 ```
 wallet_add_private_keys private_key_anda
 ```
+Untuk mengecek informasi ```wallet address``` anda bisa menjalankan perintah berikut.
+```
+wallet_info
+```
+
