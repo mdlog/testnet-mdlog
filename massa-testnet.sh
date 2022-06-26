@@ -11,8 +11,6 @@ echo " ###       ###   ### ######      #########      #######       ########### 
 echo -e "\e[0m"
 echo "================================================================================="
 
-sleep 2
-
 # set vars
 if [ ! $IP ]; then
 	read -p "Masukan IP Server: " IP
@@ -29,7 +27,7 @@ source $HOME/.bash_profile
 echo '================================================='
 echo -e "IP Kamu: \e[1m\e[32m$NODENAME\e[0m"
 echo '================================================='
-sleep 2
+
 
 
 echo -e "\e[1m\e[32m1. Delete Folder Massa dan massa.sh... \e[0m" && sleep 1
