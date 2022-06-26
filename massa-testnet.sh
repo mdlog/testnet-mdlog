@@ -15,7 +15,7 @@ sleep 2
 
 # set vars
 if [ ! $IP ]; then
-	read -p "Masukan IP Server Kamu: " NODENAME
+	read -p "Masukan IP Server Kamu: " IP
 	echo 'export IP='$IP >> $HOME/.bash_profile
 fi
 
