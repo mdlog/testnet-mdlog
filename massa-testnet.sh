@@ -21,7 +21,7 @@ if [ ! $IP ]; then
 fi
 
 echo '================================================='
-echo -e "Your node name: \e[1m\e[32m$IP\e[0m"
+echo -e "Ip Server Kamu: \e[1m\e[32m$IP\e[0m"
 echo '================================================='
 
 sleep 1
