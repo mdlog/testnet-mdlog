@@ -56,7 +56,7 @@ cd massa/massa-node/config
 wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa/config.toml
 
 
-echo -e "\e[1m\e[32m6. Downloading and building massa binary... \e[0m" && sleep 1
+#echo -e "\e[1m\e[32m6. Downloading and building massa binary... \e[0m" && sleep 1
 # buat service massad
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
