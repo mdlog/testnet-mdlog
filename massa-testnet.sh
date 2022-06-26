@@ -15,7 +15,7 @@ sleep 2
 
 # set vars
 if [ ! $IP ]; then
-	read -p "Masukan IP Server Kamu: " IP
+	read -p "Masukan IP Server: " IP
 	echo 'export IP='$IP >> $HOME/.bash_profile
 fi
 SEI_PORT=12
@@ -32,7 +32,6 @@ echo -e "Your wallet name: \e[1m\e[32m$WALLET\e[0m"
 echo -e "Your chain name: \e[1m\e[32m$SEI_CHAIN_ID\e[0m"
 echo -e "Your port: \e[1m\e[32m$SEI_PORT\e[0m"
 echo '================================================='
-
 sleep 2
 
 
