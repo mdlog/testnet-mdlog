@@ -81,10 +81,3 @@ systemctl daemon-reload
 systemctl enable massad 
 systemctl restart massad
 systemctl status massad
-
-cd $HOME
-cd massa/massa-client
-./massa-client
-wallet_generate_private_key
-
-cd $HOME
