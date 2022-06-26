@@ -24,11 +24,6 @@ echo "export SEI_CHAIN_ID=sei-testnet-2" >> $HOME/.bash_profile
 echo "export SEI_PORT=${SEI_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
-echo '================================================='
-echo -e "IP Kamu: \e[1m\e[32m$NODENAME\e[0m"
-echo '================================================='
-
-
 
 echo -e "\e[1m\e[32m1. Delete Folder Massa dan massa.sh... \e[0m" && sleep 1
 #delete folder
