@@ -49,8 +49,8 @@ wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/config.toml
 cd $HOME
 cd massa/massa-node/config
 wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa/config.toml
-
-sed -i -e "s/^IP_SERVER *=.*/IP_SERVER = \"$IP_SERVER\"/" $HOME/massa/massa-node/config/config.toml
+IP="$IP_SERVER"
+sed -i -e "s/^routable_ip *=.*/routable_ip = \"$IP_SERVER\"/" $HOME/massa/massa-node/config/config.toml
 # sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.sei/config/config.toml
 
 
