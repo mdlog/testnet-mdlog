@@ -21,7 +21,6 @@ Setelah menyelesaikan Formulir Testnet Zaman Besi , Anda akan secara otomatis me
 
   # Persyaratan
 <p style="font-size:14px" align="justify">
-
 Sebagai prasyarat untuk menerima hadiah karena berpartisipasi dalam Program Hadiah Testnet Zaman Besi Quai Network, Anda harus (i) menyelesaikan tinjauan kenal pelanggan dan anti pencucian uang dengan memuaskan sesuai dengan standar kepatuhan Dominant Strategies Inc. dan (ii ) melengkapi dan menandatangani Perjanjian Penghargaan Token Tidak Terbatas yang diterbitkan untuk Anda berdasarkan Rencana Insentif Token Dominant Strategies Inc. 2022 (salinannya akan disertakan di akhir Perjanjian Penghargaan Token Tidak Terbatas Anda untuk ditinjau).
 
 Selain itu, hadiah dapat tunduk pada ketentuan vesting oleh Rencana Insentif Token Dominant Strategies Inc. 2022.
