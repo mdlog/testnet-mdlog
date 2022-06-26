@@ -13,7 +13,7 @@ The Iron Age Testnet akan dimulai pukul 10 pagi CST pada 8 Juli 2022 dan akan di
 <p style="font-size:14px" align="justify">
 12 juta token Quai telah dialokasikan untuk mendorong partisipasi Iron Age Testnet. dari hadiah ini (8 juta token) akan didistribusikan ke penambang, dan dari hadiah ini (4 juta token) akan didistribusikan ke pengembang DApp.
 
-Tidak ada batasan partisipasi dalam Iron Age Testnet. Untuk mulai mendapatkan Quai selama Testnet Zaman Besi, silakan isi Formulir Hadiah Testnet Zaman Besi .
+Tidak ada batasan partisipasi dalam Iron Age Testnet. Untuk mulai mendapatkan Quai selama Testnet Zaman Besi, silakan isi [Formulir Hadiah Iron Age Testnet](https://quai.typeform.com/to/qzsuOd2s/)  .
 
 Catatan: Jika Anda seorang penambang, harap kirimkan formulir Anda SETELAH menyiapkan penambang/membuat alamat penambangan Anda.
 <p style="font-size:14px" align="justify">
