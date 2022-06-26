@@ -75,7 +75,7 @@ Bergabunglah dengan kami untuk membangun blockchain yang lebih baik.
   
   >-[Likedin](https://www.linkedin.com/company/quai-foundation//)
   
-  >-[Dokumen Pengembang]([https://quai.network](https://docs.quai.network/)/)
+  >-[Dokumen Pengembang](https://docs.quai.network//)
   
   >-[Kami sedang merekrut!](https://angel.co/company/quai-network/)
   
