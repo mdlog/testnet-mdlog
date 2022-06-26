@@ -21,7 +21,7 @@ Explorer:
 
 # Set Up Massa Node Secara Otomatis (OPSI 2)
 
-Anda dapat mengatur fullnode Anda dalam beberapa menit dengan menggunakan skrip otomatis di bawah ini. Ini akan meminta Anda untuk memasukan IP Server yang anda gunakan sehingga anda tidak perlu lagi membuat file ```config.toml``` di ```~/massa/massa-node/config``` !
+Anda dapat mengatur node Anda dalam beberapa menit dengan menggunakan skrip otomatis di bawah ini. Ini akan meminta Anda untuk memasukan IP Server yang anda gunakan sehingga anda tidak perlu lagi membuat file ```config.toml``` di ```~/massa/massa-node/config``` !
 
 ```
 wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa-testnet.sh && chmod +x massa-testnet.sh && ./massa-testnet.sh
