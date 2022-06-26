@@ -13,7 +13,7 @@ echo "==========================================================================
 
 # set vars
 if [ ! $IP ]; then
-	read -p "Enter IP kamu: " IP
+	read -p "Enter IP VPS kamu: " IP
 	echo 'export IP='$IP >> $HOME/.bash_profile
 fi
 SEI_PORT=12
