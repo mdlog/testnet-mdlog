@@ -77,8 +77,6 @@ RestartSec=3
 WantedBy=multi-user.target
 EOF
 
-# echo -e "\e[1m\e[32m1. Delete Folder Massa dan massa.sh... \e[0m" && sleep 1
-# izinkan run.sh bisa di akses
 chmod +x /root/massa/massa-node/run.sh
 systemctl daemon-reload 
 systemctl enable massad 
