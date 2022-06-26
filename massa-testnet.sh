@@ -11,19 +11,20 @@ echo " ###       ###   ### ######      #########      #######       ##########  
 echo -e "\e[0m"
 echo "================================================================================="
 
+
+sleep 1
+
 # set vars
 if [ ! $IP ]; then
 	read -p "Masukan IP Server: " IP
 	echo 'export IP='$IP >> $HOME/.bash_profile
 fi
-SEI_PORT=12
-if [ ! $WALLET ]; then
-	echo "export WALLET=wallet" >> $HOME/.bash_profile
-fi
-echo "export SEI_CHAIN_ID=sei-testnet-2" >> $HOME/.bash_profile
-echo "export SEI_PORT=${SEI_PORT}" >> $HOME/.bash_profile
-source $HOME/.bash_profile
 
+echo '================================================='
+echo -e "Your node name: \e[1m\e[32m$IP\e[0m"
+echo '================================================='
+
+sleep 1
 
 #delete folder
 rm -rf massa
