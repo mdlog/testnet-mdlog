@@ -49,14 +49,10 @@ tar xvzf massa_TEST.11.3_release_linux.tar.gz
 cd massa/massa-node/base_config && rm -rf config.toml
 wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/config.toml
 
-echo -e "\e[1m\e[32m5. Downloading and building massa binary... \e[0m" && sleep 1
-# buat routable IP
 cd $HOME
 cd massa/massa-node/config
 wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa/config.toml
 
-#echo -e "\e[1m\e[32m6. Downloading and building massa binary... \e[0m" && sleep 1
-# buat service massad
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
 cd ~/massa/massa-node/
@@ -82,4 +78,3 @@ systemctl daemon-reload
 systemctl enable massad 
 systemctl restart massad
 systemctl status massad
-echo "==================================================="
