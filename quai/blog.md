@@ -63,7 +63,8 @@ Beberapa prioritas utama untuk Iron Age Testnet adalah menguji dompet QuaiSnap, 
 Terima kasih atas kesabaran Anda selama siklus pengembangan sebelumnya, dan kami tidak sabar untuk melihat Quai Network aktif dan berjalan kembali!
 
 Bergabunglah dengan kami untuk membangun blockchain yang lebih baik.
-Situs web
+>-[Situs web](https://quai.network/)
+
 Perselisihan
 Twitter
 Youtube
