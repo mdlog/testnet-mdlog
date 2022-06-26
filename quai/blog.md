@@ -16,8 +16,8 @@ The Iron Age Testnet akan dimulai pukul 10 pagi CST pada 8 Juli 2022 dan akan di
 Tidak ada batasan partisipasi dalam Iron Age Testnet. Untuk mulai mendapatkan Quai selama Testnet Zaman Besi, silakan isi [Formulir Hadiah Iron Age Testnet](https://quai.typeform.com/to/qzsuOd2s/)  .
 
 Catatan: Jika Anda seorang penambang, harap kirimkan formulir Anda SETELAH menyiapkan penambang/membuat alamat penambangan Anda.
-<p style="font-size:14px" align="justify">
-Setelah menyelesaikan [Formulir Hadiah Iron Age Testnet](https://quai.typeform.com/to/qzsuOd2s/) , Anda akan secara otomatis menerima peran Testnet yang sesuai di server Discord kami , memberi Anda akses ke komunitas penambang Quai (Spartan) atau pengembang (Arsitek) lainnya.
+
+Setelah menyelesaikan [Formulir Hadiah Iron Age Testnet](https://quai.typeform.com/to/qzsuOd2s/) . Anda akan secara otomatis menerima peran Testnet yang sesuai di server Discord kami , memberi Anda akses ke komunitas penambang Quai (Spartan) atau pengembang (Arsitek) lainnya.
 
   # Persyaratan
 <p style="font-size:14px" align="justify">
