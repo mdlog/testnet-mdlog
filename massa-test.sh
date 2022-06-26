@@ -11,6 +11,19 @@ echo " ###       ###   ### ######      #########      #######       ########### 
 echo -e "\e[0m"
 echo "================================================================================="
 
+# set vars
+if [ ! $IP ]; then
+	read -p "Enter IP kamu: " IP
+	echo 'export IP='$IP >> $HOME/.bash_profile
+fi
+SEI_PORT=12
+if [ ! $WALLET ]; then
+	echo "export WALLET=wallet" >> $HOME/.bash_profile
+fi
+echo "export SEI_CHAIN_ID=sei-testnet-2" >> $HOME/.bash_profile
+echo "export SEI_PORT=${SEI_PORT}" >> $HOME/.bash_profile
+source $HOME/.bash_profile
+
 echo -e "\e[1m\e[32m1. Delete Folder Massa dan massa.sh... \e[0m" && sleep 1
 #delete
 rm -rf massa
@@ -34,6 +47,15 @@ tar xvzf massa_TEST.11.3_release_linux.tar.gz
 cd massa/massa-node/base_config && rm -rf config.toml
 wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/config.toml
 
+echo -e "\e[1m\e[32m5. Downloading and building massa binary... \e[0m" && sleep 1
+#buat routable IP
+cd $HOME
+cd massa/massa-node/config
+wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa/config.toml
+
+
+echo -e "\e[1m\e[32m6. Downloading and building massa binary... \e[0m" && sleep 1
+#buat service massad
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
 cd ~/massa/massa-node/
@@ -54,6 +76,8 @@ RestartSec=3
 WantedBy=multi-user.target
 EOF
 
+echo -e "\e[1m\e[32m7. Downloading and building massa binary... \e[0m" && sleep 1
+#izinkan run.sh bisa di akses
 chmod +x /root/massa/massa-node/run.sh
 systemctl daemon-reload 
 systemctl enable massad 
