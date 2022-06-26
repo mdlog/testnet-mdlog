@@ -17,7 +17,7 @@ Tidak ada batasan partisipasi dalam Iron Age Testnet. Untuk mulai mendapatkan Qu
 
 Catatan: Jika Anda seorang penambang, harap kirimkan formulir Anda SETELAH menyiapkan penambang/membuat alamat penambangan Anda.
 <p style="font-size:14px" align="justify">
-Setelah menyelesaikan Formulir Testnet Zaman Besi , Anda akan secara otomatis menerima peran Testnet yang sesuai di server Discord kami , memberi Anda akses ke komunitas penambang Quai (Spartan) atau pengembang (Arsitek) lainnya.
+Setelah menyelesaikan [Formulir Hadiah Iron Age Testnet](https://quai.typeform.com/to/qzsuOd2s/) , Anda akan secara otomatis menerima peran Testnet yang sesuai di server Discord kami , memberi Anda akses ke komunitas penambang Quai (Spartan) atau pengembang (Arsitek) lainnya.
 
   # Persyaratan
 <p style="font-size:14px" align="justify">
