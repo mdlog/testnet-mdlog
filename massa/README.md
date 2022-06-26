@@ -24,7 +24,7 @@ Explorer:
 Anda dapat mengatur node Anda dalam beberapa menit dengan menggunakan skrip otomatis di bawah ini. Ini akan meminta Anda untuk memasukan IP Server yang anda gunakan sehingga anda tidak perlu lagi membuat file ```config.toml``` di ```~/massa/massa-node/config``` !
 
 ```
-wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa-testnet.sh && chmod +x massa-testnet.sh && ./massa-testnet.sh
+wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa/massa-testnet.sh && chmod +x massa-testnet.sh && ./massa-testnet.sh
 ```
 Setelah proses instalasi binary dari massa selesai, akan terbuka terminal ```massa client``` jika anda belum memiliki ```wallet address``` silahkan jalankan perintah berikut di command line.
 
