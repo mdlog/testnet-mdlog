@@ -19,6 +19,22 @@ if [ ! $IP ]; then
 	echo 'export IP='$IP >> $HOME/.bash_profile
 fi
 
+fi
+SEI_PORT=12
+if [ ! $WALLET ]; then
+	echo "export WALLET=wallet" >> $HOME/.bash_profile
+fi
+echo "export SEI_CHAIN_ID=sei-testnet-2" >> $HOME/.bash_profile
+echo "export SEI_PORT=${SEI_PORT}" >> $HOME/.bash_profile
+source $HOME/.bash_profile
+
+echo '================================================='
+echo -e "Your node name: \e[1m\e[32m$NODENAME\e[0m"
+echo -e "Your wallet name: \e[1m\e[32m$WALLET\e[0m"
+echo -e "Your chain name: \e[1m\e[32m$SEI_CHAIN_ID\e[0m"
+echo -e "Your port: \e[1m\e[32m$SEI_PORT\e[0m"
+echo '================================================='
+
 sleep 2
 
 
