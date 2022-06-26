@@ -14,20 +14,15 @@ echo "==========================================================================
 sleep 1
 
 # set vars
-if [ ! $IP ]; then
-	read -p "Masukan IP Server Kamu: " IP
-	echo 'export IP='$IP >> $HOME/.bash_profile
+if [ ! $IP_SERVER ]; then
+read -p "Input IP Server Kamu: " IP_SERVER
+echo 'export IP_SERVER='\"${IP_SERVER}\" >> $HOME/.bash_profile
 fi
-SEI_PORT=12
-if [ ! $WALLET ]; then
-	echo "export WALLET=wallet" >> $HOME/.bash_profile
-fi
-echo "export SEI_CHAIN_ID=sei-testnet-2" >> $HOME/.bash_profile
-echo "export SEI_PORT=${SEI_PORT}" >> $HOME/.bash_profile
-source $HOME/.bash_profile
+echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
+. $HOME/.bash_profile
 
 echo '================================================='
-echo -e "IP Server Kamu: \e[1m\e[32m$NODENAME\e[0m"
+echo -e "IP Server Kamu: \e[1m\e[32m${IP_SERVER}\e[0m"
 echo '================================================='
 sleep 1
 
