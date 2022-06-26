@@ -1,1 +1,1 @@
-### Halaman ini memuat bagaimana cara menjalakan Node atau Validator Proyek Kripto
+### Halaman ini memuat bagaimana cara menjalakan Node dan Validator Proyek Kripto
