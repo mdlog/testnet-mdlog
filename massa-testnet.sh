@@ -50,7 +50,7 @@ cd $HOME
 cd massa/massa-node/config
 wget https://raw.githubusercontent.com/mdlog/massa-mdlog/main/massa/config.toml
 sed -i -e "s/^routable_ip *=.*/AAA.BBB.CCC.DDD = \"$IP_SERVER\"/" $HOME/massa/massa-node/config/config.toml
-sed -i -e "s/^AAA.BBB.CCC.DDD *=.*/routable_ip $HOME/massa/massa-node/config/config.toml
+sed -i -e "s/^AAA.BBB.CCC.DDD *=.*/routable_ip = \"routable_ip\"/" $HOME/massa/massa-node/config/config.toml
 
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
