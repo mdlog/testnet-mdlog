@@ -1,3 +1,4 @@
+<div style=’text-align:justify;’>
 Testnet Zaman Besi Jaringan Quai
 Sejak kesimpulan dari Zaman Perunggu Testnet pada tanggal 23 Maret, tim Quai telah bekerja keras untuk memperbaiki jaringan. Kami sangat senang mengumumkan peluncuran Testnet ketiga kami, Testnet Zaman Besi, pada tanggal 8 Juli.
 
@@ -80,5 +81,7 @@ Pandangan, pendapat, dan pernyataan yang dibuat dalam pembaruan ini adalah dari 
 
 
 sumber: https://blog.quai.network/quai-network-iron-age-testnet-b2f9c9a7a28c
+  
+  </div>
 
 
