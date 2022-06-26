@@ -55,19 +55,16 @@ Hadiah penambangan untuk Iron Age Testnet, mirip dengan hadiah dan hadiah Media 
 <p style="font-size:14px" align="justify">
 Akan ada sejumlah proyek pemenang yang dipilih untuk setiap hadiah atas kebijaksanaan tim Strategi Dominan. Proyek-proyek pemenang ini akan dipilih pada akhir Iron Age Testnet, dan akan diberikan token Mainnet Quai pada Peluncuran Mainnet atas kontribusi mereka pada ekosistem Quai Network.
 
-<p style="font-size:14px" align="justify">
-Token Memecoin/QRC-20 — 75.000 QUAI (x10)
+>-Token Memecoin/QRC-20 — 75.000 QUAI (x10)
 Hadiah 75.000 Quai akan diberikan hingga 10 token QRC-20 berbeda yang digunakan di Jaringan Quai. Hadiah tambahan dapat diberikan jika token QRC-20 Anda adalah referensi multi-rantai.
   
-<p style="font-size:14px" align="justify">
-Pertukaran Terdesentralisasi (DEX) —400.000 QUAI (x3)
+>-Pertukaran Terdesentralisasi (DEX) —400.000 QUAI (x3)
 Karunia 400.000 Quai akan diberikan hingga 3 pertukaran terdesentralisasi berbeda yang memungkinkan pertukaran token QRC-20 dan fungsi lainnya.
 
-Game/P2E — 260.000 QUAI (x5)
+>-Game/P2E — 260.000 QUAI (x5)
 Karunia 260.000 Quai akan diberikan hingga 5 aplikasi game/play-to-earn yang berbeda yang digunakan di Quai Network.
   
-<p style="font-size:14px" align="justify">
-Lainnya/Lain-lain — 150.000 QUAI (x5)
+>-Lainnya/Lain-lain — 150.000 QUAI (x5)
 Hadiah 150.000 Quai akan diberikan kepada hingga 5 proyek lain yang tidak termasuk dalam kategori yang ditentukan di atas.
 
 Dokumentasi untuk menerapkan kontrak pintar pada rantai Quai Network akan tersedia setelah peluncuran Iron Age Testnet di saluran YouTube kami dan di dokumen kami.
