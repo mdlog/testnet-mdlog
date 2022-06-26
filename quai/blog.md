@@ -63,14 +63,21 @@ Beberapa prioritas utama untuk Iron Age Testnet adalah menguji dompet QuaiSnap, 
 Terima kasih atas kesabaran Anda selama siklus pengembangan sebelumnya, dan kami tidak sabar untuk melihat Quai Network aktif dan berjalan kembali!
 
 Bergabunglah dengan kami untuk membangun blockchain yang lebih baik.
->-[Situs web](https://quai.network/)
->-[Discord](https://discord.gg/ngw88VXXnV/)
->-[Twitter](https://twitter.com/QuaiNetwork/)
->-[Youtube](https://youtube.com/channel/UCA7wfK91O1CmwHm4LELnNHw/)
->-[Reddit](https://www.reddit.com/r/quainetwork//)
->-[Likedin](https://www.linkedin.com/company/quai-foundation//)
->-[Dokumen Pengembang]([https://quai.network](https://docs.quai.network/)/)
->-[Kami sedang merekrut!](https://angel.co/company/quai-network/)
+  >-[Situs web](https://quai.network/)
+  
+  >-[Discord](https://discord.gg/ngw88VXXnV/)
+  
+  >-[Twitter](https://twitter.com/QuaiNetwork/)
+  
+  >-[Youtube](https://youtube.com/channel/UCA7wfK91O1CmwHm4LELnNHw/)
+  
+  >-[Reddit](https://www.reddit.com/r/quainetwork//)
+  
+  >-[Likedin](https://www.linkedin.com/company/quai-foundation//)
+  
+  >-[Dokumen Pengembang]([https://quai.network](https://docs.quai.network/)/)
+  
+  >-[Kami sedang merekrut!](https://angel.co/company/quai-network/)
   
 <p style="font-size:14px" align="justify">
 Quai Network adalah jaringan blockchain Proof-of-Work sumber terbuka yang memanfaatkan kemampuan penambangan gabungan untuk meningkatkan throughput dan keamanan. Pengguna Quai Network akan menikmati waktu transaksi yang cepat tanpa mengorbankan desentralisasi dan keamanan. Penambang akan memiliki peluang penambangan yang kompetitif di banyak blockchain dalam jaringan.
