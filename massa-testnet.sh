@@ -18,8 +18,6 @@ if [ ! $IP ]; then
 	read -p "Masukan IP Server Kamu: " IP
 	echo 'export IP='$IP >> $HOME/.bash_profile
 fi
-
-fi
 SEI_PORT=12
 if [ ! $WALLET ]; then
 	echo "export WALLET=wallet" >> $HOME/.bash_profile
