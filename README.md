@@ -32,7 +32,7 @@ Setelah proses instalasi binary dari massa selesai, akan terbuka terminal ```mas
 wallet_generate_private_key
 ```
 
-Jika anda sudah memiliki ```wallet address``` dan ingin menambahkan menggunakan ```private key``` anda bisa menjalankan perintah ini.
+Jika anda sudah memiliki ```wallet address``` dan ingin menambahkan menggunakan ```private key``` anda bisa menjalankan perintah ini, ganti ```private_key_anda``` dengan private key yang anda miliki.
 
 ```
 wallet_add_private_keys private_key_anda
