@@ -15,14 +15,20 @@ sleep 1
 
 # set vars
 if [ ! $IP ]; then
-	read -p "Masukan IP Server: " IP
+	read -p "Masukan IP Server Kamu: " IP
 	echo 'export IP='$IP >> $HOME/.bash_profile
 fi
+SEI_PORT=12
+if [ ! $WALLET ]; then
+	echo "export WALLET=wallet" >> $HOME/.bash_profile
+fi
+echo "export SEI_CHAIN_ID=sei-testnet-2" >> $HOME/.bash_profile
+echo "export SEI_PORT=${SEI_PORT}" >> $HOME/.bash_profile
+source $HOME/.bash_profile
 
-echo '=============================='
-echo -e "Ip Server Kamu: \e[1m\e[32m$IP\e[0m"
-echo '=============================='
-
+echo '================================================='
+echo -e "IP Server Kamu: \e[1m\e[32m$NODENAME\e[0m"
+echo '================================================='
 sleep 1
 
 #delete folder
