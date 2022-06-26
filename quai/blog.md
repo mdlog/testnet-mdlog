@@ -72,7 +72,7 @@ Dokumentasi untuk menerapkan kontrak pintar pada rantai Quai Network akan tersed
 <p style="font-size:14px" align="justify">
 Jika Anda ingin proyek yang Anda terapkan dipertimbangkan untuk mendapatkan hadiah, harap isi Formulir Jenis Pengajuan Proyek Arsitek dengan informasi yang diperlukan tentang proyek Anda. Informasi yang diminta dan dipertimbangkan saat menentukan hadiah akan mencakup alamat kontrak, situs web/Github, materi pemasaran, dan banyak lagi.
   
-  # Garis Waktu dan Perkembangan Lebih Lanjut
+  # Timeline dan Perkembangan Lebih Lanjut
 <p style="font-size:14px" align="justify">
 
   
