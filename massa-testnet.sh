@@ -33,7 +33,7 @@ sleep 2
 
 
 echo -e "\e[1m\e[32m1. Delete Folder Massa dan massa.sh... \e[0m" && sleep 1
-#delete
+#delete folder
 rm -rf massa
 rm -rf massa-test.sh
 echo -e "\e[1m\e[32m2. Updating packages... \e[0m" && sleep 1
