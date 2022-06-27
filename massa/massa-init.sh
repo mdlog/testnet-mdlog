@@ -76,7 +76,8 @@ EOF
 chmod +x /root/massa/massa-node/run.sh
 cd $HOME
 cd /etc/init.d && chmod +x massad
-service massad enable
+chkconfig massad --add
+chkconfig massad on
 service massad start
 service massad restart
 service massad status
