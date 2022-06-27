@@ -26,7 +26,7 @@ Anda dapat mengatur node Anda dalam beberapa menit dengan menggunakan skrip otom
 > Gunakan perintah dibawah ini.
 
 ```
-wget -O massa-init.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-init.sh && chmod +x massa-init.sh && ./massa-init.sh
+wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-testnet.sh && chmod +x massa-testnet.sh && ./massa-testnet.sh
 ```
 
 Setelah proses instalasi binary dari massa selesai, akan terbuka terminal ```massa client``` jika anda belum memiliki ```wallet address``` silahkan jalankan perintah berikut di command line.
