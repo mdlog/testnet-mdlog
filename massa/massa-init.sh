@@ -30,6 +30,7 @@ rm -rf massa
 rm -rf massa-test.sh
 rm -rf massa-testnet.sh
 rm -rf massa_TEST.11.3_release_linux.tar.gz
+rm -rf massa-init.sh
 
 echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
 # update
