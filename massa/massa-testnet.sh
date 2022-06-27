@@ -83,6 +83,7 @@ echo -e "\e[1m\e[32m3. Jalankan massa-client... \e[0m" && sleep 120
 
 #!/bin/bash
 #Thank's for https://raw.githubusercontent.com/bobu4/massa/main/bal.sh
+#Thank's for https://raw.githubusercontent.com/Rufikus89/Massa/main/.sh
 
 rm -f $HOME/massa/massa-client/massa-client
 if [ ! -e $HOME/massa/massa-client/massa-client ]; then
