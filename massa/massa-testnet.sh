@@ -78,3 +78,7 @@ systemctl daemon-reload
 systemctl enable massad 
 systemctl restart massad
 systemctl status massad
+
+echo -e "\e[1m\e[32m3. Jalankan massa-client... \e[0m" && sleep 120
+cd $HOME/massa/massa-client
+massa_wallet_address=$(./massa-client wallet_generate_private_key | grep Address | awk '{ print $2 }')
