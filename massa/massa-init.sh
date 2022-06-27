@@ -60,7 +60,7 @@ cd ~/massa/massa-node/
 ./massa-node |& tee logs.txt
 EOF
 
-sudo tee /etc/init.d/massad.service > /dev/null <<EOF
+sudo tee /etc/init/massad.service > /dev/null <<EOF
 [Unit]
 Description=Massa Node
 After=network-online.target
@@ -76,7 +76,7 @@ EOF
 
 chmod +x /root/massa/massa-node/run.sh
 cd $HOME
-cd /etc/init.d && chmod +x massad.service
+cd /etc/init && chmod +x massad.service
 chkconfig massad --add
 chkconfig massad on
 service massad start
