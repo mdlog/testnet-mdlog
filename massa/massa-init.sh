@@ -59,7 +59,7 @@ cd ~/massa/massa-node/
 ./massa-node |& tee logs.txt
 EOF
 
-sudo tee /etc/systemd/system/massad.service > /dev/null <<EOF
+sudo tee /etc/init/massad.service > /dev/null <<EOF
 [Unit]
 Description=Massa Node
 After=network-online.target
