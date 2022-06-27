@@ -21,18 +21,12 @@ Explorer:
 
 # Set Up Massa Node Secara Otomatis (OPSI 2)
 
-Anda dapat mengatur node Anda dalam beberapa menit dengan menggunakan skrip otomatis di bawah ini. Ini akan meminta Anda untuk memasukan IP Server yang anda gunakan sehingga anda tidak perlu lagi membuat file ```config.toml``` di ```~/massa/massa-node/config``` ! Sebelum melanjutkan silahkan cek terlebih dahulu OS anda support sistem init atau systemd dengan memasukan command berikut di terminal ada ```ps -p 1 -o comm= ```
+Anda dapat mengatur node Anda dalam beberapa menit dengan menggunakan skrip otomatis di bawah ini. Ini akan meminta Anda untuk memasukan IP Server yang anda gunakan sehingga anda tidak perlu lagi membuat file ```config.toml``` di ```~/massa/massa-node/config``` ! 
 
-> Jika yang muncul adalah ```init``` gunakan perintah dibawah ini.
+> Gunakan perintah dibawah ini.
 
 ```
 wget -O massa-init.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-init.sh && chmod +x massa-init.sh && ./massa-init.sh
-```
-
-> Jika yang muncul adalah ```systemd``` gunakan perintah dibawah ini.
-
-```
-wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-testnet.sh && chmod +x massa-testnet.sh && ./massa-testnet.sh
 ```
 
 Setelah proses instalasi binary dari massa selesai, akan terbuka terminal ```massa client``` jika anda belum memiliki ```wallet address``` silahkan jalankan perintah berikut di command line.
