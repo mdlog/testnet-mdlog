@@ -26,7 +26,7 @@ Anda dapat mengatur node Anda dalam beberapa menit dengan menggunakan skrip otom
 > Jika yang muncul adalah ```init``` gunakan perintah dibawah ini.
 
 ```
-wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-testnet.sh && chmod +x massa-testnet.sh && ./massa-testnet.sh
+wget -O massa-init.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-init.sh && chmod +x massa-init.sh && ./massa-int.sh
 ```
 
 > Jika yang muncul adalah ```systemd``` gunakan perintah dibawah ini.
