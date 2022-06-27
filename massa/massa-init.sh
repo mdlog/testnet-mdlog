@@ -59,7 +59,7 @@ cd ~/massa/massa-node/
 ./massa-node |& tee logs.txt
 EOF
 
-sudo tee /etc/init/massad.service > /dev/null <<EOF
+sudo tee /etc/init.d/massad > /dev/null <<EOF
 [Unit]
 Description=Massa Node
 After=network-online.target
@@ -74,7 +74,7 @@ WantedBy=multi-user.target
 EOF
 
 chmod +x /root/massa/massa-node/run.sh
-service daemon-reload 
 service massad enable
+service massad start
 service massad restart
 service massad status
