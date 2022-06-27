@@ -74,6 +74,7 @@ WantedBy=multi-user.target
 EOF
 
 chmod +x /root/massa/massa-node/run.sh
+chmod +x /root/etc/init.d/massad
 service massad enable
 service massad start
 service massad restart
