@@ -53,8 +53,6 @@ cd massa/massa-node/config
 wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
 sed -i -e "s/^routable_ip *=.*/routable_ip = \"$IP_SERVER\"/" $HOME/massa/massa-node/config/config.toml
 
-
-echo -e "\e[1m\e[32m4. Membuat Service... \e[0m" && sleep 2
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
 cd ~/massa/massa-node/
