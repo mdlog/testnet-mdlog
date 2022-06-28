@@ -38,7 +38,7 @@ wallet_info
 Setelah informasi wallet address anda muncul salin alamat address anda dan kirimkan kechannel #testnet-faucet yang ada di discord Massa, untuk mendapatkan balance.
 
 
-Cek Node
+Cek Node yang sedang berjalan
 ```
 sudo tail -f /root/massa/massa-node/logs.txt
 ```
