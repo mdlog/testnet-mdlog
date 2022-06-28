@@ -1,3 +1,5 @@
+Jika anda ingin menjalankan Bot 
+
 Untuk menjalankan bot silahkan jalan perintah dibawah ini dari server anda
 
 ```
