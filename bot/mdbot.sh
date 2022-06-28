@@ -13,7 +13,8 @@ echo "==========================================================================
 
 
 TOKEN_BOT="5509813677:AAHUX7kAMuW0aF1Zx3NDq5ZxzUx6yJWXHZM"
-
+while true
+do
 cd $HOME/massa/massa-client
 active_rolls=$(./massa-client wallet_info | grep "Active rolls" | awk '{ print $3 }')
 int_rolls=${active_rolls}
@@ -27,3 +28,11 @@ elif [ $int_rolls  -lt "1"]; then
 
 fi
 
+   printf "sleep"
+        for((sec=0; sec<60; sec++))
+        do
+                printf "."
+                sleep 1
+        done
+        printf "\n"
+done
