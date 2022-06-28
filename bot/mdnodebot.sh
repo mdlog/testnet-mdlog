@@ -45,7 +45,15 @@ elif [ $int_rolls  -lt "1"]; then
 
         curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=NODE $WALLET_ADDRESS TIDAK AKTIF"
 
-
 fi
+
+ printf "sleep"
+        for((sec=0; sec<60; sec++))
+        do
+                printf "."
+                sleep 1
+        done
+        printf "\n"
+
 
 done
