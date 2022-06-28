@@ -38,11 +38,11 @@ active_rolls=$(./massa-client wallet_info | grep "Active rolls" | awk '{ print $
 int_rolls=${active_rolls}
 
 if  [ $int_rolls -gt "0" ]; then
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=NODE AKTIF"
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=NODE $WALLET_ADDRESS AKTIF"
 
 elif [ $int_rolls  -lt "1"]; then
 
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=NODE TIDAK AKTIF"
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=NODE $WALLET_ADDRESS TIDAK AKTIF"
 
 
 fi
