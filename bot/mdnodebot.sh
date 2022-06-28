@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-SHOW=$(tail /var/log/xferlog)
+SHOW=$(tail -f /root/massa/massa-node/logs.txt)
 TOKEN=5509813677:AAHUX7kAMuW0aF1Zx3NDq5ZxzUx6yJWXHZM
 CHAT_ID=485873863
 MESSAGE=”$SHOW”
