@@ -1,35 +1,49 @@
-#!/usr/bin/env bash
-# Bot telegram
-SHOW=$(tail /var/log/waagent.log)
+#!/bin/bash
+echo "================================================================================"
+echo -e "\033[0;35m"
+echo " :::       :::   :::::::::       :::           :::::::::      ::::::::::    ";
+echo " ::: +   + :::   :::     ::::    :::          ::::    :::    :::       ::   ";
+echo " :+: ++ ++ :+:   :+:     :+::+   ::+          +::      ::+   :+:            ";
+echo " +:+  +:+  +:+   ++:      ++:+   +:+         :++       ++:   :+:+#######  ";
+echo " +#+       +#+   +++      #+++   #++         +#+       +#+   +#+      ###   ";
+echo " ###       ###   ###    #####    #########    ###     ###    ###      ###   ";
+echo " ###       ###   ### ######      #########      #######       ##########   ";
+echo -e "\e[0m"
+echo "================================================================================="
+
+sleep 1
+
+# set vars
+if [ ! $ID_CHAT ]; then
+read -p "Input ID_CHAT Kamu: " ID_CHAT
+echo 'export ID_CHAT='\"${ID_CHAT}\" >> $HOME/.bash_profile
+read -p "Input Wallet Address Kamu: " WALLET_ADDRESS
+echo 'export WALLET_ADDRESS='\"${WALLET_ADDRESS}\" >> $HOME/.bash_profile
+fi
+echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
+. $HOME/.bash_profile
+
+echo -e "ID Chat Kamu: \e[1m\e[32m${ID_CHAT}\e[0m"
+echo -e "Wallet Address Kamu: \e[1m\e[32m${WALLET_ADDRESS}\e[0m"
+echo '================================================='
+sleep 1
+
 TOKEN_BOT="5509813677:AAHUX7kAMuW0aF1Zx3NDq5ZxzUx6yJWXHZM"
 CHAT_ID="485873863"
 
 PESAN="$SHOW"
-curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=$PESAN"
 
-if [ ! -e $HOME/massa/massa-client/massa-client ]; then
-  wget https://raw.githubusercontent.com/razumv/helpers/main/massa/massa-client -O $HOME/massa/massa-client/massa-client
-  chmod +x $HOME/massa/massa-client/massa-client
+cd $HOME/massa/massa-client
+active_rolls=$(./massa-client wallet_info | grep "Active rolls" | awk '{ print $3 }')
+int_rolls=${active_rolls}
+
+if  [ $int_rolls -gt "0" ]; then
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=NODE AKTIF"
+
+elif [ $int_rolls  -lt "1"]; then
+
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=NODE TIDAK AKTIF"
+
+
 fi
-#
-cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_generate_private_key | grep Address | awk '{ print $2 }')
-massa_wallet_address=$(./massa-client wallet_info | grep Address | awk '{ print $2 }')
-while true
-do
-        balance=$(./massa-client wallet_info | grep "Final balance" | awk '{ print $3 }')
-        int_balance=${balance%%.*}
-        if [ $int_balance -gt "99" ]; then
-                echo "More than 99"
-                resp=$(./massa-client buy_rolls $massa_wallet_address $(($int_balance/100)) 0)
-                echo $resp
-        elif [ $int_balance -lt "100" ]; then
-                echo "Less than 100"
-        fi
-        printf "sleep"
-        for((sec=0; sec<60; sec++))
-        do
-                printf "."
-                sleep 1
-        done
-        printf "\n"
-done
+
