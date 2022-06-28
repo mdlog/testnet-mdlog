@@ -11,9 +11,6 @@ echo " ###       ###   ### ######      #########      #######       ##########  
 echo -e "\e[0m"
 echo "================================================================================="
 
-cd $HOME
-sudo apt install screen && screen
-
 sleep 1
 
 # set vars
@@ -31,32 +28,6 @@ echo -e "Wallet Address Kamu: \e[1m\e[32m${WALLET_ADDRESS}\e[0m"
 echo '================================================='
 sleep 1
 
-TOKEN_BOT="5509813677:AAHUX7kAMuW0aF1Zx3NDq5ZxzUx6yJWXHZM"
-CHAT_ID="485873863"
-
-PESAN="$SHOW"
-while true
-do
-cd $HOME/massa/massa-client
-active_rolls=$(./massa-client wallet_info | grep "Active rolls" | awk '{ print $3 }')
-int_rolls=${active_rolls}
-
-if  [ $int_rolls -gt "0" ]; then
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=NODE $WALLET_ADDRESS AKTIF"
-
-elif [ $int_rolls  -lt "1"]; then
-
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=NODE $WALLET_ADDRESS TIDAK AKTIF"
-
-fi
-
- printf "sleep"
-        for((sec=0; sec<60; sec++))
-        do
-                printf "."
-                sleep 1
-        done
-        printf "\n"
-
-
-done
+clear
+cd $HOME
+wget -O mdbot.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/bot/mdbot.sh chmod +x mdbot.sh && ./mdbot.sh
