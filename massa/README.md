@@ -29,7 +29,7 @@ Anda dapat mengatur node Anda dalam beberapa menit dengan menggunakan skrip otom
 wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-testnet.sh && chmod +x massa-testnet.sh && ./massa-testnet.sh
 ```
 
-Setelah proses instalasi binary dari massa selesai, anda bisa menekan ```CTRL + C``` di keyboard anda. Selanjutnya masuk kedalam folder ```massa-client``` letaknya ada di ```cd $HOME massa/massa-client``` setelah berada di folder ```massa-client``` jalankan perintah berikut ```./massa-client```. Selanjutnya jika sudah berada di terminal client massa silahkan jalankan perintah berikut di command line, perintah ini untuk melihat data Wallet Address anda.
+Setelah proses instalasi binary dari massa selesai, anda bisa menekan ```CTRL + C``` di keyboard anda. Selanjutnya masuk kedalam folder ```massa-client``` letaknya ada di ```cd massa/massa-client``` setelah berada di folder ```massa-client``` jalankan perintah berikut ```./massa-client```. Selanjutnya jika sudah berada di terminal client massa silahkan jalankan perintah berikut di command line, perintah ini untuk melihat data Wallet Address anda.
 
 ```
 wallet_info
