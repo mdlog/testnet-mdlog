@@ -15,7 +15,7 @@
 
 #!/usr/bin/env bash
 # Bot telegram
-SHOW=$(tail /root/var/log/waagent.log)
+SHOW=$(tail /var/log/waagent.log)
 TOKEN_BOT=5509813677:AAHUX7kAMuW0aF1Zx3NDq5ZxzUx6yJWXHZM
 CHAT_ID=-485873863
  
