@@ -32,12 +32,12 @@ TOKEN_BOT="5509813677:AAHUX7kAMuW0aF1Zx3NDq5ZxzUx6yJWXHZM"
 CHAT_ID="485873863"
 
 PESAN="$SHOW"
-
+while true
+do
 cd $HOME/massa/massa-client
 active_rolls=$(./massa-client wallet_info | grep "Active rolls" | awk '{ print $3 }')
 int_rolls=${active_rolls}
-while
-        do
+
 if  [ $int_rolls -gt "0" ]; then
         curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=NODE $WALLET_ADDRESS AKTIF"
 
