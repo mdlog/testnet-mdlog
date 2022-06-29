@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 ADDRESS="$WALLET_ADDRESS"
