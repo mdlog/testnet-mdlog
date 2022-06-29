@@ -10,7 +10,7 @@ Setelah muncul silahkan klik botnya dan klik ```START```, maka anda akan melihat
 ![id_chat](https://user-images.githubusercontent.com/17427126/176402853-dfcc7acb-422f-4704-b53b-22fd35f345f8.png)
 
 > # Langkah Ke-Dua
-Tambahkan bot @MDNodes_bot, search di bagian pencarian masukan ```@get_id_bot``` seperti gambar dibawah ini.
+Tambahkan bot @MDNodes_bot, search di bagian pencarian masukan ``` @MDNodes_bot``` seperti gambar dibawah ini.
 
 ![md_node_bot](https://user-images.githubusercontent.com/17427126/176405409-a3a6e0a3-70cc-4898-9fe6-9060ec330880.png)
 
