@@ -20,7 +20,7 @@ elif [ $int_rolls  -lt "1" ]; then
 fi
 
    printf "sleep"
-        for((sec=0; sec<60; sec++))
+        for ((sec=0; sec<60; sec++))
         do
                 printf "."
                 sleep 1
