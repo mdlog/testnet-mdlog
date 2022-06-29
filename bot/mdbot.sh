@@ -11,7 +11,8 @@ echo " ###       ###   ### ######      #########      #######       ##########  
 echo -e "\e[0m"
 echo "================================================================================="
 
-
+ADDRESS="$WALLET_ADDRESS"
+ID="$ID_CHAT"
 TOKEN_BOT="5509813677:AAHUX7kAMuW0aF1Zx3NDq5ZxzUx6yJWXHZM"
 while true
 do
@@ -20,11 +21,11 @@ active_rolls=$(./massa-client wallet_info | grep "Active rolls" | awk '{ print $
 int_rolls=${active_rolls}
 
 if  [ $int_rolls -gt "0" ]; then
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID_CHAT" -d "parse_mode=html" -d "text=NODE $WALLET_ADDRESS AKTIF"
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text=NODE: $ADDRESS AKTIF"
 
-elif [ $int_rolls  -lt "1"]; then
+elif [ $int_rolls  -lt "1" ]; then
 
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID_CHAT" -d "parse_mode=html" -d "text=NODE $WALLET_ADDRESS TIDAK AKTIF"
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text=NODE: $ADDRESS TIDAK AKTIF"
 
 fi
 
@@ -36,3 +37,4 @@ fi
         done
         printf "\n"
 done
+
