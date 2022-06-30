@@ -10,28 +10,24 @@ active_rolls=$(./massa-client wallet_info | grep "Active rolls" | awk '{ print $
 int_rolls=${active_rolls}
 
 # update
-cd $HOME/massa/massa-client
+
 final_balance=$(./massa-client wallet_info | grep "Final balance" | awk '{ print $2 }')
 int_final_balance=${final_balance}
-cd $HOME/massa/massa-client
 candidate_balance=$(./massa-client wallet_info | grep "Candidate balance" | awk '{ print $3 }')
 int_candidate_balance=${candidate_balance}
-cd $HOME/massa/massa-client
 locked_balance=$(./massa-client wallet_info | grep "Locked balance" | awk '{ print $4 }')
 int_locked_balance=${locked_balance}
-cd $HOME/massa/massa-client
 final_rolls=$(./massa-client wallet_info | grep "Final rolls" | awk '{ print $5 }')
 int_final_rolls=${final_rolls}
-cd $HOME/massa/massa-client
 candidate_rolls=$(./massa-client wallet_info | grep "Candidate rolls" | awk '{ print $6 }')
 int_candidate_rolls=${candidate_rolls}
 
 if  [ $int_rolls -gt "0" ]; then
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ✅ NODE: $ADDRESS Aktif\n Final balance : $int_final_balance\n Candidate balance: $int_candidate_balance\n Locked balance: $int_locked_balance\n\n Active rolls: $int_rolls\n Final rolls: $int_final_rolls\n Candidate rolls: $int_candidate_rolls"
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ✅ NODE: $ADDRESS Aktif \n Final balance: $int_final_balance \n Candidate balance: $int_candidate_balance \n Locked balance: $int_locked_balance \n Active rolls: $int_rolls \n Final rolls: $int_final_rolls \n Candidate rolls: $int_candidate_rolls"
 
 elif [ $int_rolls  -lt "1" ]; then
 
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ❌ NODE: $ADDRESS Tidak Aktif\n Final balance : $int_final_balance\n Candidate balance: $int_candidate_balance\n Locked balance: $int_locked_balance\n\n Active rolls: $int_rolls\n Final rolls: $int_rolls\n Candidate rolls: $int_candidate_rolls"
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ❌ NODE: $ADDRESS Tidak Aktif \n Final balance: $int_final_balance \n Candidate balance: $int_candidate_balance \n Locked balance: $int_locked_balance \n Active rolls: $int_rolls \n Final rolls: $int_final_rolls \n Candidate rolls: $int_candidate_rolls"
 
 fi
    printf "sleep"
