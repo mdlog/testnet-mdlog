@@ -45,4 +45,4 @@ sudo tail -f /root/massa/massa-node/logs.txt
 
 Untuk mengetahui step by step secara jelas silahkan nonton video berikut
 
-```https://www.youtube.com/watch?v=lRdD0gVraoo```
+- [Run Dengan Satu Command Line](```https://www.youtube.com/watch?v=lRdD0gVraoo```)
