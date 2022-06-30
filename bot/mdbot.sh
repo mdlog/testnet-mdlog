@@ -8,9 +8,11 @@ do
 cd $HOME/massa/massa-client
 active_rolls=$(./massa-client wallet_info | grep "Active rolls" | awk '{ print $1 }')
 int_rolls=${active_rolls}
+final_balance=$(./massa-client wallet_info | grep "Final balance" | awk '{ print $2 }')
+int_balance={final_balance}
 
 if  [ $int_rolls -gt "0" ]; then
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ✅ NODE: $ADDRESS Aktif"
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ✅ NODE: $ADDRESS Aktif \n Final balance: $int_balance"
        
 
 elif [ $int_rolls -lt "1" ]; then
