@@ -24,7 +24,7 @@ final_rolls=$(./massa-client wallet_info | grep "Final rolls" | awk '{ print $5 
 int_final_rolls=${final_rolls}
 cd $HOME/massa/massa-client
 candidate_rolls=$(./massa-client wallet_info | grep "Candidate rolls" | awk '{ print $6 }')
-int_rolls=${candidate_rolls}
+int_candidate_rolls=${candidate_rolls}
 
 if  [ $int_rolls -gt "0" ]; then
         curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ✅ NODE: $ADDRESS Aktif\n Final balance : $int_final_balance\n Candidate balance: $int_candidate_balance\n Locked balance: $int_locked_balance\n\n Active rolls: $int_rolls\n Final rolls: $int_final_rolls\n Candidate rolls: $int_candidate_rolls"
