@@ -13,7 +13,7 @@ if  [ $int_rolls -gt "0" ]; then
         curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ✅ NODE: $ADDRESS Aktif"
        
 
-elif [ $int_rolls  -lt "1" ]; then
+elif [ $int_rolls -lt "1" ]; then
         curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ❌ NODE: $ADDRESS Tidak Aktif"
        
 fi
