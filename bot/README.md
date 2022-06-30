@@ -24,4 +24,4 @@ Sebelum melajutkan pada langkah ke-dua ini pastikan anda telah memiliki ```chat_
 wget -O mdnodebot.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/bot/mdnodebot.sh && chmod +x mdnodebot.sh && ./mdnodebot.sh
 ```
 
-Setelah itu kalian akan diminta untuk memasukan ```chat_id``` dan Wallet ```Address kalian``` silahkan masukan dan tekan ```Enter``` untuk melanjutkan.
+Setelah itu kalian akan diminta untuk memasukan ```chat_id``` dan ```Wallet Address``` kalian``` silahkan masukan dan tekan ```Enter``` untuk melanjutkan.
