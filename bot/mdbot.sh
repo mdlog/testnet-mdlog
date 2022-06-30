@@ -31,7 +31,7 @@ if  [ $int_rolls -gt "0" ]; then
 
 elif [ $int_rolls  -lt "1" ]; then
 
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ❌ NODE: $ADDRESS Tidak Aktif\n Final balance : $int_final_balance\n Candidate balance: $int_candidate_balance\n Locked balance: $int_locked_balance\n\n Active rolls: $int_active_rolls\n Final rolls: $int_rolls\n Candidate rolls: $int_candidate_rolls"
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text= ❌ NODE: $ADDRESS Tidak Aktif\n Final balance : $int_final_balance\n Candidate balance: $int_candidate_balance\n Locked balance: $int_locked_balance\n\n Active rolls: $int_rolls\n Final rolls: $int_rolls\n Candidate rolls: $int_candidate_rolls"
 
 fi
    printf "sleep"
