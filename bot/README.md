@@ -25,3 +25,8 @@ wget -O mdnodebot.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/
 ```
 
 Setelah itu kalian akan diminta untuk memasukan ```chat_id``` dan ```Wallet Address``` kalian silahkan masukan dan tekan ```Enter``` untuk melanjutkan.
+
+
+# Silahkan nonton video berikut untuk mengetahui step by step yang lebih lengkap
+
+https://www.youtube.com/watch?v=2WqyMf7I7Kk&t=313s
