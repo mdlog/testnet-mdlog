@@ -21,12 +21,12 @@ final_rolls=$(./massa-client wallet_info | grep "Final rolls" | awk '{ print $3 
 int_final_rolls=${final_rolls}
 candidate_rolls=$(./massa-client wallet_info | grep "Candidate rolls" | awk '{ print $3 }')
 int_candidate_rolls=${candidate_rolls}
-PESAN_AKTIF="✅ NODE: $ADDRESS Aktif<pre></pre>Final balance: $int_final_balance<pre></pre>Candidate balance: $int_candidate_balance<pre></pre>Locked balance: $int_locked_balance<pre></pre>Active rolls: $int_rolls<pre></pre>Final rolls: $int_final_rolls<pre></pre>Candidate rolls: $int_candidate_rolls"
-PESAN_TIDAK_AKTIF="❌ NODE: $ADDRESS Tidak Aktif<pre></pre>Final balance: $int_final_balance<pre></pre>Candidate balance: $int_candidate_balance<pre></pre>Locked balance: $int_locked_balance<pre></pre>Active rolls: $int_rolls<pre></pre>Final rolls: $int_final_rolls<pre></pre>Candidate rolls: $int_candidate_rolls"
+AKTIF=" ✅ NODE: $ADDRESS Aktif<pre> </pre>Final balance: $int_final_balance<pre></pre>Candidate balance: $int_candidate_balance<pre></pre>Locked balance: $int_locked_balance<pre></pre>Active rolls: $int_rolls<pre></pre>Final rolls: $int_final_rolls<pre></pre>Candidate rolls: $int_candidate_rolls"
+TIDAK="❌ NODE: $ADDRESS Tidak Aktif<pre></pre>Final balance: $int_final_balance<pre></pre>Candidate balance: $int_candidate_balance<pre></pre>Locked balance: $int_locked_balance<pre></pre>Active rolls: $int_rolls<pre></pre>Final rolls: $int_final_rolls<pre></pre>Candidate rolls: $int_candidate_rolls"
 if  [ $int_rolls -gt "0" ]; then
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d text=$PESAN_AKTIF
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d text=$PAKTIF
 elif [ $int_rolls  -lt "1" ]; then
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d text= $PESAN_TIDAK_AKTIF
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d text= $TIDAK
 fi
    printf "sleep"
         for((sec=0; sec<60; sec++))
