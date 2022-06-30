@@ -26,7 +26,7 @@ TIDAK=" ❌ NODE: $ADDRESS Tidak Aktif<pre> </pre>Final balance: $int_final_bala
 if  [ $int_rolls -gt "0" ]; then
         curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d text=$AKTIF
 elif [ $int_rolls  -lt "1" ]; then
-        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d text= $TIDAK
+        curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d text=$TIDAK
 fi
    printf "sleep"
         for((sec=0; sec<60; sec++))
