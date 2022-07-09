@@ -66,7 +66,7 @@ sudo tee /etc/systemd/system/massad.service > /dev/null <<EOF
 Description=Massa Node
 After=network-online.target
 [Service]
-Environment="RUST_BACKTRACE=1"
+Environment="RUST_BACKTRACE=full"
 User=$USER
 ExecStart=/root/massa/massa-node/run.sh
 Restart=always
