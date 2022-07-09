@@ -17,6 +17,8 @@ sleep 1
 if [ ! $IP_SERVER ]; then
 read -p "Input IP Server Kamu: " IP_SERVER
 echo 'export IP_SERVER='\"${IP_SERVER}\" >> $HOME/.bash_profile
+read -p "Input Password Kamu: " PASSWORD
+echo 'export PASSWORD='\"${PASSWORD}\" >> $HOME/.bash_profile
 fi
 echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 . $HOME/.bash_profile
@@ -58,7 +60,7 @@ sed -i -e "s/^routable_ip *=.*/routable_ip = \"$IP_SERVER\"/" $HOME/massa/massa-
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
 cd ~/massa/massa-node/
-./massa-node |& tee logs.txt
+./massa-node -p $PASSWORD |& tee logs.txt
 EOF
 
 sudo tee /etc/systemd/system/massad.service > /dev/null <<EOF
