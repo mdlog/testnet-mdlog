@@ -25,7 +25,7 @@ echo -e "IP Server Kamu: \e[1m\e[32m${IP_SERVER}\e[0m"
 echo '================================================='
 sleep 1
 
-#delete folder
+# delete folder
 rm -rf massa
 rm -rf massa-test.sh
 rm -rf massa-testnet.sh
@@ -48,8 +48,8 @@ echo -e "\e[1m\e[32m3. Downloading and building massa binary... \e[0m" && sleep 
 cd $HOME
 wget https://github.com/massalabs/massa/releases/download/TEST.12.0/massa_TEST.12.0_release_linux.tar.gz
 tar xvzf massa_TEST.12.0_release_linux.tar.gz
-cd massa/massa-node/base_config && rm -rf config.toml
-wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/config.toml
+# cd massa/massa-node/base_config && rm -rf config.toml
+# wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/config.toml
 cd $HOME
 cd massa/massa-node/config
 wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
