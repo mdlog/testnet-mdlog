@@ -84,6 +84,8 @@ systemctl enable massad
 systemctl restart massad
 systemctl status massad
 
+
+
 #!/bin/bash
 if [ ! $PASSWORDKU ]; then
 read -p "Input Password Client Kamu: " PASSWORDKU
@@ -95,6 +97,7 @@ echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 echo -e "Password Client Kamu: \e[1m\e[32m${PASSWORDKU}\e[0m"
 echo '================================================='
 sleep 1
+# Generate New Wallet 
 
 chmod +x $HOME/massa/massa-client/massa-client
 cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORDKU | grep Address )
