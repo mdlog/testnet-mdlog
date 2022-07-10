@@ -48,6 +48,3 @@ Cek Node yang sedang berjalan
 sudo tail -f /root/massa/massa-node/logs.txt
 ```
 
-Untuk mengetahui step by step secara jelas silahkan nonton video berikut
-
-- [Run Dengan Satu Command Line] https://www.youtube.com/watch?v=lRdD0gVraoo
