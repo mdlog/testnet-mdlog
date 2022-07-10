@@ -39,6 +39,7 @@ echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
 sudo apt-get update
 sudo apt-get install clang
 sudo apt-get -y install librocksdb-dev
+sudo apt-get install screen
 
 echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
 
