@@ -24,7 +24,7 @@ echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 . $HOME/.bash_profile
 
 echo -e "IP Server Kamu: \e[1m\e[32m${IP_SERVER}\e[0m"
-echo -e "IP Server Kamu: \e[1m\e[32m${PASSWORD}\e[0m"
+echo -e "Password Kamu: \e[1m\e[32m${PASSWORD}\e[0m"
 echo '================================================='
 sleep 1
 
@@ -88,21 +88,21 @@ systemctl status massad
 
 
 #!/bin/bash
-if [ ! $PASSWORDKU ]; then
-read -p "Input Password Client Kamu: " PASSWORDKU
-echo 'export PASSWORDKU='\"${PASSWORDKU}\" >> $HOME/.bash_profile
+if [ ! $PASSWORD ]; then
+read -p "Input Password Client Kamu: " PASSWORD
+echo 'export PASSWORD='\"${PASSWORD}\" >> $HOME/.bash_profile
 fi
 echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 . $HOME/.bash_profile
 
-echo -e "Password Client Kamu: \e[1m\e[32m${PASSWORDKU}\e[0m"
+echo -e "Password Client Kamu: \e[1m\e[32m${PASSWORD}\e[0m"
 echo '================================================='
 sleep 1
 # Generate New Wallet 
 
 chmod +x $HOME/massa/massa-client/massa-client
-cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORDKU | grep Address )
-cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_generate_secret_key - p $PASSWORDKU | grep Address | awk '{ print $2 }')
+cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORD | grep Address )
+cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_generate_secret_key - p $PASSWORD | grep Address | awk '{ print $2 }')
 
 clear
 cd $HOME
