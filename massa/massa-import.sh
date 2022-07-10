@@ -93,11 +93,11 @@ read -p "Input Password Client Kamu: " PASSWORD
 echo 'export PASSWORD='\"${PASSWORD}\" >> $HOME/.bash_profile
 read -p "Input Priv Key Kamu: " PRIVKEY
 echo 'export PRIVKEY='\"${PRIVKEY}\" >> $HOME/.bash_profile
-
 fi
 echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 . $HOME/.bash_profile
 
+echo -e "Password Client Kamu: \e[1m\e[32m${PASSWORD}\e[0m"
 echo -e "Private Key Kamu: \e[1m\e[32m${PRIVKEY}\e[0m"
 echo '================================================='
 sleep 1
