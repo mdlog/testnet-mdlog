@@ -101,9 +101,10 @@ echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 echo -e "Password Client Kamu: \e[1m\e[32m${PASSWORD}\e[0m"
 echo -e "Private Key Kamu: \e[1m\e[32m${PRIVKEY}\e[0m"
 echo '================================================='
-sleep 1
 PASSWORDKU=$PASSWORD
 KEY=$PRIVKEY
+sleep 1
+
 # Generate New Wallet 
 clear
 cd ~
