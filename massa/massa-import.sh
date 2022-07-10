@@ -24,7 +24,7 @@ echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 . $HOME/.bash_profile
 
 echo -e "IP Server Kamu: \e[1m\e[32m${IP_SERVER}\e[0m"
-echo -e "IP Server Kamu: \e[1m\e[32m${PASSWORD}\e[0m"
+echo -e "Password Kamu: \e[1m\e[32m${PASSWORD}\e[0m"
 echo '================================================='
 sleep 1
 
