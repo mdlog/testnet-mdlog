@@ -30,6 +30,6 @@ sleep 1
 
 clear
 cd $HOME
-wget -O mdbotedit.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/bot/mdbotedit.sh && chmod +x mdbotedit.sh && nohup ./mdbotedit.sh
+wget -O mdbotedit.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/bot/mdbotedit.sh && chmod +x mdbotedit.sh && screen -xR -S mdbot ./mdbotedit.sh
 # wget -O mdbot.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/bot/mdbot.sh && chmod +x mdbot.sh && nohup ./mdbot.sh
 
