@@ -31,7 +31,7 @@ wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/m
 > ## Gunakan perintah dibawah ini jika anda sudah memiliki ```Wallet Address``` Massa dan ingin mengimport ```Private Key```.
 
 ```
-wget -O massa-import.sh https://github.com/mdlog/testnet-mdlog/edit/main/massa/massa-import.sh && chmod +x massa-import.sh && ./massa-import.sh
+wget -O massa-import.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-import.sh && chmod +x massa-import.sh && ./massa-import.sh
 ```
 
 Setelah proses instalasi binary dari massa selesai, anda bisa menekan ```CTRL + C``` di keyboard anda. Selanjutnya masuk kedalam folder ```massa-client``` letaknya ada di ```cd massa/massa-client``` setelah berada di folder ```massa-client``` jalankan perintah berikut ```./massa-client -p <passsword>```, ganti ```<password>``` dengan password massa-client yang sudah anda buat saat tahap instalasi. Selanjutnya jika sudah berada di terminal client massa silahkan jalankan perintah berikut di command line, perintah ini untuk melihat data Wallet Address anda.
