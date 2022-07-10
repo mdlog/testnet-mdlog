@@ -91,6 +91,7 @@ systemctl status massad
 if [ ! $PASSWORD ]; then
 read -p "Input Password Client Kamu: " PASSWORD
 echo 'export PASSWORD='\"${PASSWORD}\" >> $HOME/.bash_profile
+if [ ! $PRIVKEY ]; then
 read -p "Input Priv Key Kamu: " PRIVKEY
 echo 'export PRIVKEY='\"${PRIVKEY}\" >> $HOME/.bash_profile
 fi
