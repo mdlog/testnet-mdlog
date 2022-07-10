@@ -22,8 +22,8 @@ final_rolls=$(./massa-client wallet_info -p $PASSWORD | grep "Final rolls" | awk
 int_final_rolls=${final_rolls}
 candidate_rolls=$(./massa-client wallet_info -p $PASSWORD | grep "Candidate rolls" | awk '{ print $3 }')
 int_candidate_rolls=${candidate_rolls}
-AKTIF=" ✅ NODE: $ADDRESS Aktif "\==" Final balance: $int_final_balance "\==" Candidate balance: $int_candidate_balance "\==" Locked balance: $int_locked_balance "\==" Active rolls: $int_rolls "\==" Final rolls: $int_final_rolls"\==" Candidate rolls: $int_candidate_rolls"
-TIDAK=" ❌ NODE: $ADDRESS Tidak Aktif "\==" Final balance: $int_final_balance "\==" Candidate balance: $int_candidate_balance "\==" Locked balance: $int_locked_balance "\==" Active rolls: $int_rolls "\==" Final rolls: $int_final_rolls"\==" Candidate rolls: $int_candidate_rolls"
+AKTIF=" ✅ NODE: $ADDRESS Aktif "\==" Final balance: $int_final_balance "\==" Candidate balance: $int_candidate_balance "\==" Locked balance: $int_locked_balance "\==" Active rolls: $int_rolls "\==" Final rolls: $int_final_rolls "\==" Candidate rolls: $int_candidate_rolls"
+TIDAK=" ❌ NODE: $ADDRESS Tidak Aktif "\==" Final balance: $int_final_balance "\==" Candidate balance: $int_candidate_balance "\==" Locked balance: $int_locked_balance "\==" Active rolls: $int_rolls "\==" Final rolls: $int_final_rolls "\==" Candidate rolls: $int_candidate_rolls"
 if  [ $int_rolls -gt "0" ]; then
         curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text=$AKTIF"
 elif [ $int_rolls  -lt "1" ]; then
