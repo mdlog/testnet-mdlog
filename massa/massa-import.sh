@@ -88,9 +88,9 @@ systemctl status massad
 
 
 #!/bin/bash
-if [ ! $PASSWORDKU ]; then
-read -p "Input Password Client Kamu: " PASSWORDKU
-echo 'export PASSWORDKU='\"${PASSWORDKU}\" >> $HOME/.bash_profile
+if [ ! $PASSWORD ]; then
+read -p "Input Password Client Kamu: " PASSWORD
+echo 'export PASSWORD='\"${PASSWORD}\" >> $HOME/.bash_profile
 read -p "Input Priv Key Kamu: " PRIVKEY
 echo 'export PRIVKEY='\"${PRIVKEY}\" >> $HOME/.bash_profile
 
@@ -101,13 +101,14 @@ echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 echo -e "Private Key Kamu: \e[1m\e[32m${PRIVKEY}\e[0m"
 echo '================================================='
 sleep 1
-
+PASSWORDKU=$PASSWORD
+KEY=$PRIVKEY
 # Generate New Wallet 
 clear
 cd ~
 chmod +x $HOME/massa/massa-client/massa-client
 cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORDKU | grep Address )
-cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client wallet_add_secret_keys $PRIVKEY -p $PASSWORDKU | grep "Secret Key" )
+cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client wallet_add_secret_keys $KEY -p $PASSWORDKU | grep "Secret Key" )
 # cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_add_secret_keys $PRIVKEY -p $PASSWORDKU | grep "Secret Key" | awk '{ print $2 }')
 
 clear
