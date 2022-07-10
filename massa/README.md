@@ -40,7 +40,7 @@ Setelah proses instalasi binary dari massa selesai, anda bisa menekan ```CTRL + 
 wallet_info
 ```
 
-Setelah informasi wallet address anda muncul salin alamat address anda dan kirimkan kechannel #testnet-faucet yang ada di discord Massa, untuk mendapatkan balance.
+Setelah informasi wallet address anda muncul salin ```alamat address``` anda dan kirimkan kechannel #testnet-faucet yang ada di discord Massa, untuk mendapatkan balance.
 
 
 Cek Node yang sedang berjalan
