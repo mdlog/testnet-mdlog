@@ -30,7 +30,7 @@ elif [ $int_rolls  -lt "1" ]; then
         curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text=$TIDAK"
 fi
    printf "sleep"
-        for((sec=0; sec<600; sec++))
+        for((sec=0; sec<1800; sec++))
         do
                 printf "."
                 sleep 1
