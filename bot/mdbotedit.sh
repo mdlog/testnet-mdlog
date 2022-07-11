@@ -4,6 +4,7 @@ ADDRESS="$WALLET_ADDRESS"
 ID="$ID_CHAT"
 TOKEN_BOT="5509813677:AAHUX7kAMuW0aF1Zx3NDq5ZxzUx6yJWXHZM"
 PASSWORDKU=$PASSWORD
+rm -rf mdnodebot.sh
 while true
 do
 cd $HOME/massa/massa-client
