@@ -62,26 +62,27 @@ systemctl status massad
 
 
 #!/bin/bash
-if [ ! $PRIVKEY ]; then
-read -p "Input Priv Key Kamu: " PRIVKEY
-echo 'export PRIVKEY='\"${PRIVKEY}\" >> $HOME/.bash_profile
-fi
-echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
-. $HOME/.bash_profile
+# if [ ! $PRIVKEY ]; then
+# read -p "Input Priv Key Kamu: " PRIVKEY
+# echo 'export PRIVKEY='\"${PRIVKEY}\" >> $HOME/.bash_profile
+# fi
+# echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
+# . $HOME/.bash_profile
 
-echo -e "Private Key Kamu: \e[1m\e[32m${PRIVKEY}\e[0m"
-echo '================================================='
-PASSWORDKU=$PASSWORD
-KEY=$PRIVKEY
-sleep 1
+# echo -e "Private Key Kamu: \e[1m\e[32m${PRIVKEY}\e[0m"
+# echo '================================================='
+# PASSWORDKU=$PASSWORD
+# KEY=$PRIVKEY
+# sleep 1
 
 # Generate New Wallet 
-clear
-cd ~
-chmod +x $HOME/massa/massa-client/massa-client
-cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORDKU | grep Address )
-cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client wallet_add_secret_keys $KEY -p $PASSWORDKU | grep "Secret Key" )
+# clear
+# cd ~
+# chmod +x $HOME/massa/massa-client/massa-client
+# cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORDKU | grep Address )
+# cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client wallet_add_secret_keys $KEY -p $PASSWORDKU | grep "Secret Key" )
 
 clear
 cd $HOME
 wget -O buyrolls.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/buyrolls.sh && chmod +x buyrolls.sh && screen -xR -S buyrolls ./buyrolls.sh
+
