@@ -23,6 +23,9 @@ cp massaold/massa-node/config/node_privkey.key massa/massa-node/config/node_priv
 cp massaold/massa-client/wallet.dat massa/massa-client/wallet.dat
 export RUST_BACKTRACE=full
 
+wget https://github.com/massalabs/massa/releases/download/TEST.12.0/massa_TEST.12.0_release_linux.tar.gz
+tar xvzf massa_TEST.12.0_release_linux.tar.gz
+
 clear
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
