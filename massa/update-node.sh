@@ -28,9 +28,9 @@ cd $HOME/massa/massa-node/config/ && rm -rf config.toml
 cd $HOME/massa/massa-node/config/ && rm -rf node_privkey.key
 cd $HOME/massa/massa-client/ && rm -rf wallet.dat 
 
-cp massaold/massa-node/config/config.toml massa/massa-node/config/config.toml
-cp massaold/massa-node/config/node_privkey.key massa/massa-node/config/node_privkey.key
-cp massaold/massa-client/wallet.dat massa/massa-client/wallet.dat
+cp $HOME/massaold/massa-node/config/config.toml $HOME/massa/massa-node/config/config.toml
+cp $HOME/massaold/massa-node/config/node_privkey.key $HOME/massa/massa-node/config/node_privkey.key
+cp $HOME/massaold/massa-client/wallet.dat $HOME/massa/massa-client/wallet.dat
 export RUST_BACKTRACE=full
 
 clear
