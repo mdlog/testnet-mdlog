@@ -13,7 +13,6 @@ echo -e "\e[0m"
 echo "================================================================================="
 
 sleep 1
-PASSWORDKU=$PASSWORD
 systemctl stop massad
 cd $HOME/etc/systemd/system && rm -rf massad.service
 mv massa massaold
@@ -30,7 +29,7 @@ clear
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
 cd ~/massa/massa-node/
-./massa-node -p $PASSWORDKU |& tee logs.txt
+./massa-node -p $PASSWORD |& tee logs.txt
 EOF
 
 sudo tee /etc/systemd/system/massad.service > /dev/null <<EOF
