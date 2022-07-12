@@ -14,9 +14,12 @@ echo "==========================================================================
 
 sleep 1
 systemctl stop massad
-cd $HOME/etc/systemd/system && rm -rf massad.service
-mv massa massaold
+cd $HOME/etc/systemd/system
+rm -rf massad.service
+cd ~
+rm -rf buyrolls.sh
 
+mv massa massaold
 cp massaold/massa-node/config/config.toml massa/massa-node/config/config.toml
 cp massaold/massa-node/config/node_privkey.key massa/massa-node/config/node_privkey.key
 cp massaold/massa-client/wallet.dat massa/massa-client/wallet.dat
@@ -73,3 +76,7 @@ cd ~
 chmod +x $HOME/massa/massa-client/massa-client
 cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORDKU | grep Address )
 cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client wallet_add_secret_keys $KEY -p $PASSWORDKU | grep "Secret Key" )
+
+clear
+cd $HOME
+wget -O buyrolls.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/buyrolls.sh && chmod +x buyrolls.sh && screen -xR -S buyrolls ./buyrolls.sh
