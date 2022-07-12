@@ -16,11 +16,11 @@ sleep 1
 PASSWORDKU=$PASSWORD
 systemctl stop massad
 cd $HOME/etc/systemd/system && rm -rf massad.service
-mv massa mas9
+mv massa massaold
 
-cp mas9/massa-node/config/config.toml massa/massa-node/config/config.toml
-cp mas9/massa-node/config/node_privkey.key massa/massa-node/config/node_privkey.key
-cp mas9/massa-client/wallet.dat massa/massa-client/wallet.dat
+cp massaold/massa-node/config/config.toml massa/massa-node/config/config.toml
+cp massaold/massa-node/config/node_privkey.key massa/massa-node/config/node_privkey.key
+cp massaold/massa-client/wallet.dat massa/massa-client/wallet.dat
 export RUST_BACKTRACE=full
 
 clear
