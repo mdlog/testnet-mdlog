@@ -24,9 +24,9 @@ wget https://github.com/massalabs/massa/releases/download/TEST.12.0/massa_TEST.1
 tar xvzf massa_TEST.12.0_release_linux.tar.gz
 clear
 cd ~
-cd $HOME/massa/massa-node/config/ && rm -rf config.toml
-cd $HOME/massa/massa-node/config/ && rm -rf node_privkey.key
-cd $HOME/massa/massa-client/ && rm -rf wallet.dat 
+# cd $HOME/massa/massa-node/config/ && rm -rf config.toml
+# cd $HOME/massa/massa-node/config/ && rm -rf node_privkey.key
+# cd $HOME/massa/massa-client/ && rm -rf wallet.dat 
 
 cp $HOME/massaold/massa-node/config/config.toml $HOME/massa/massa-node/config/config.toml
 cp $HOME/massaold/massa-node/config/node_privkey.key $HOME/massa/massa-node/config/node_privkey.key
