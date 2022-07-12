@@ -20,13 +20,18 @@ cd ~
 rm -rf buyrolls.sh
 
 mv massa massaold
+wget https://github.com/massalabs/massa/releases/download/TEST.12.0/massa_TEST.12.0_release_linux.tar.gz
+tar xvzf massa_TEST.12.0_release_linux.tar.gz
+clear
+cd ~
+cd $HOME/massa/massa-node/config/ && rm -rf config.toml
+cd $HOME/massa/massa-node/config/ && rm -rf node_privkey.key
+cd $HOME/massa/massa-client/ && rm -rf wallet.dat 
+
 cp massaold/massa-node/config/config.toml massa/massa-node/config/config.toml
 cp massaold/massa-node/config/node_privkey.key massa/massa-node/config/node_privkey.key
 cp massaold/massa-client/wallet.dat massa/massa-client/wallet.dat
 export RUST_BACKTRACE=full
-
-wget https://github.com/massalabs/massa/releases/download/TEST.12.0/massa_TEST.12.0_release_linux.tar.gz
-tar xvzf massa_TEST.12.0_release_linux.tar.gz
 
 clear
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
