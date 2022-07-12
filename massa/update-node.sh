@@ -31,7 +31,7 @@ cd ~
 cp $HOME/massaold/massa-node/config/config.toml $HOME/massa/massa-node/config/config.toml
 cp $HOME/massaold/massa-node/config/node_privkey.key $HOME/massa/massa-node/config/node_privkey.key
 cp $HOME/massaold/massa-client/wallet.dat $HOME/massa/massa-client/wallet.dat
-export RUST_BACKTRACE=full
+
 
 clear
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
