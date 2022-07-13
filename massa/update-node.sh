@@ -29,28 +29,6 @@ cp $HOME/massaold/massa-node/config/config.toml $HOME/massa/massa-node/config/co
 cp $HOME/massaold/massa-node/config/node_privkey.key $HOME/massa/massa-node/config/node_privkey.key
 cp $HOME/massaold/massa-client/wallet.dat $HOME/massa/massa-client/wallet.dat
 
-
-clear
-sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
-#!/bin/bash
-cd ~/massa/massa-node/
-./massa-node -p $PASSWORD |& tee logs.txt
-EOF
-
-sudo tee /etc/systemd/system/massad.service > /dev/null <<EOF
-[Unit]
-Description=Massa Node
-After=network-online.target
-[Service]
-Environment="RUST_BACKTRACE=full"
-User=$USER
-ExecStart=/root/massa/massa-node/run.sh
-Restart=always
-RestartSec=3
-[Install]
-WantedBy=multi-user.target
-EOF
-
 chmod +x /root/massa/massa-node/run.sh
 systemctl daemon-reload 
 systemctl enable massad 
