@@ -18,6 +18,7 @@ cd $HOME/etc/systemd/system
 rm -rf massad.service
 cd ~
 rm -rf buyrolls.sh
+sudo apt install xdotool
 
 mv massa massaold
 wget https://github.com/massalabs/massa/releases/download/TEST.12.1/massa_TEST.12.1_release_linux.tar.gz
@@ -85,3 +86,6 @@ systemctl status massad
 clear
 cd $HOME
 wget -O buyrolls.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/buyrolls.sh && chmod +x buyrolls.sh && screen -xR -S buyrolls ./buyrolls.sh
+
+sudo xdotool key ctrl+a+d
+
