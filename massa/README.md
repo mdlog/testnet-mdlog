@@ -34,7 +34,7 @@ wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/m
 wget -O massa-import.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-import.sh && chmod +x massa-import.sh && ./massa-import.sh
 ```
 
-Setelah proses instalasi binary dari massa selesai, anda bisa menekan ```CTRL + A + D``` di keyboard anda. Selanjutnya masuk kedalam folder ```massa-client``` letaknya ada di ```cd massa/massa-client``` setelah berada di folder ```massa-client``` jalankan perintah berikut ```./massa-client -p <passsword>```, ganti ```<password>``` dengan password massa-client yang sudah anda buat saat tahap instalasi. Selanjutnya jika sudah berada di terminal client massa silahkan jalankan perintah berikut di command line, perintah ini untuk melihat data Wallet Address anda.
+Setelah proses instalasi binary dari massa selesai, dan di terminal anda muncul ```sleep......``` anda bisa menekan ```CTRL + A + D``` di keyboard anda. Selanjutnya masuk kedalam folder ```massa-client``` letaknya ada di ```cd massa/massa-client``` setelah berada di folder ```massa-client``` jalankan perintah berikut ```./massa-client -p <passsword>```, ganti ```<password>``` dengan password massa-client yang sudah anda buat saat tahap instalasi. Selanjutnya jika sudah berada di terminal client massa silahkan jalankan perintah berikut di command line, perintah ini untuk melihat data Wallet Address anda.
 
 ```
 wallet_info
