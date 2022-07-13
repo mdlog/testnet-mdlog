@@ -58,6 +58,7 @@ systemctl enable massad
 systemctl restart massad
 systemctl status massad
 
+#!/bin/bash
 clear
 cd ~
 wget -O buyrolls.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/buyrolls.sh && chmod +x buyrolls.sh && screen -xR -S buyrolls ./buyrolls.sh
