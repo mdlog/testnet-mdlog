@@ -51,5 +51,11 @@ sudo tail -f /root/massa/massa-node/logs.txt
 
 # Update Node
 
+Jika anda menjalankan Node secara Otomatis (OPSI 2) silahkan jalan perintah dibawah ini untuk melakukan update terhadap Node anda
+
+``` wget -O update-node.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/update-node.sh && chmod +x update-node.sh && ./update-node.sh```
+
+Setelah muncul tulisan ```Sleep``` di terminal, silahkan ```CTRL + A + D``` di keyboard anda
+
 
 
