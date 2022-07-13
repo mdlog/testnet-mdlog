@@ -29,7 +29,6 @@ cp $HOME/massaold/massa-node/config/config.toml $HOME/massa/massa-node/config/co
 cp $HOME/massaold/massa-node/config/node_privkey.key $HOME/massa/massa-node/config/node_privkey.key
 cp $HOME/massaold/massa-client/wallet.dat $HOME/massa/massa-client/wallet.dat
 
-chmod +x /root/massa/massa-node/run.sh
 systemctl daemon-reload 
 systemctl enable massad 
 systemctl restart massad
