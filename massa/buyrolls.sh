@@ -48,4 +48,5 @@ printf "sleep"
          printf "\n"
  done
 
+#!/bin/bash
 sudo xdotool key ctrl+a+d
