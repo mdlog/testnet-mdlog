@@ -50,6 +50,7 @@ RestartSec=3
 WantedBy=multi-user.target
 EOF
 
+chmod +x /root/massa/massa-node/run.sh
 systemctl daemon-reload 
 systemctl enable massad 
 systemctl restart massad
