@@ -19,6 +19,7 @@ rm -rf massad.service
 cd ~
 rm -rf buyrolls.sh
 sudo apt install xdotool
+-y
 
 mv massa massaold
 wget https://github.com/massalabs/massa/releases/download/TEST.12.1/massa_TEST.12.1_release_linux.tar.gz
