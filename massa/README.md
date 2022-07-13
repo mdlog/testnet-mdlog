@@ -48,3 +48,8 @@ Cek Node yang sedang berjalan
 sudo tail -f /root/massa/massa-node/logs.txt
 ```
 
+
+# Update Node
+
+
+
