@@ -57,7 +57,7 @@ Jika anda menjalankan Node secara Otomatis seperti diatas (OPSI 2) silahkan jala
 wget -O update-node.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/update-node.sh && chmod +x update-node.sh && ./update-node.sh
 ```
 
-Setelah muncul tulisan ```Sleep``` di terminal, silahkan ```CTRL + A + D``` di keyboard anda
+Setelah muncul tulisan ```Sleep.....``` di terminal, silahkan ```CTRL + A + D``` di keyboard anda
 
 
 
