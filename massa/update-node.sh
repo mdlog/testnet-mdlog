@@ -14,7 +14,6 @@ echo "==========================================================================
 
 sleep 1
 systemctl stop massad
-cd $HOME/etc/systemd/system && rm -rf massad.service
 cd ~
 rm -rf buyrolls.sh
 
