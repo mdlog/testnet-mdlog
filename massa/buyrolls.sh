@@ -47,3 +47,5 @@ printf "sleep"
          done
          printf "\n"
  done
+
+sudo xdotool key ctrl+a+d
