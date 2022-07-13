@@ -12,6 +12,7 @@ echo '================================================='
 PASSWORDKU=$PASSWORD
 sleep 1
 
+rm- rf update-node.sh
 declare -i int_balance
 declare -i lc
 
