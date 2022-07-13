@@ -40,7 +40,7 @@ if [ $int_balance -gt "99" ]; then
 fi
 
 printf "sleep"
-         for((sec=0; sec<900; sec++))
+         for((sec=0; sec<60; sec++))
          do
                 printf "."
                 sleep 1
