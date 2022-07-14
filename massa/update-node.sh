@@ -11,7 +11,7 @@ echo " ###       ###   ###    #####    #########    ###     ###    ###      ### 
 echo " ###       ###   ### ######      #########      #######       ##########   ";
 echo -e "\e[0m"
 echo "================================================================================="
-
+PASSWORDKU=$PASSWORD
 sleep 1
 systemctl stop massad
 cd ~
@@ -33,7 +33,7 @@ cp $HOME/massaold/massa-client/wallet.dat $HOME/massa/massa-client/wallet.dat
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
 cd ~/massa/massa-node/
-./massa-node -p $PASSWORD |& tee logs.txt
+./massa-node -p $PASSWORDKU |& tee logs.txt
 EOF
 
 sudo tee /etc/systemd/system/massad.service > /dev/null <<EOF
