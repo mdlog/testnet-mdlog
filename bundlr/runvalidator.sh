@@ -12,7 +12,7 @@ echo -e "\e[0m"
 echo "================================================================================="
 
 sleep 1
-sudo -i
+
 echo -e "\e[1m\e[32m1. Update dan Instalasi Docker & Docker-Compose... \e[0m" && sleep 1
 #!/bin/bash
 # update
