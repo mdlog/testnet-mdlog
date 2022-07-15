@@ -31,4 +31,4 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 echo -e "\e[1m\e[32m2. Clone repo Bundlr dan buat wallet Arweave... \e[0m" && sleep 1
 git clone --recurse-submodules https://github.com/Bundlr-Network/validator-rust.git
-cd validator-rust && cargo run --bin wallet-tool create > wallet.json
+cd validator-rust && RUSTFLAGS="$RUSTFLAGS -A dead_code" cargo run --bin wallet-tool create > wallet.json
