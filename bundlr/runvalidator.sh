@@ -20,6 +20,8 @@ sudo apt-get update
 sudo apt-get install -y cargo
 sudo apt-get install screen
 sudo apt-get install -y pkg-config
+sudo apt-get install cron
+sudo apt-get install libsqlite3-dev
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y libpq-dev
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
