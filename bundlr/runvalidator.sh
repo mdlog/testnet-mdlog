@@ -19,6 +19,8 @@ echo -e "\e[1m\e[32m1. Update dan Instalasi Docker & Docker-Compose... \e[0m" &&
 sudo apt-get update
 sudo apt-get install cargo
 sudo apt-get install screen
+sudo apt-get install pkg-config
+sudo apt-get install libssl-dev
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
