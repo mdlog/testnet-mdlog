@@ -26,8 +26,6 @@ sudo apt install docker-ce
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
-echo -e "\e[1m\e[32m2. Clone repo Bundlr... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m2. Clone repo Bundlr dan buat wallet Arweave... \e[0m" && sleep 1
 git clone --recurse-submodules https://github.com/Bundlr-Network/validator-rust.git
-
-echo -e "\e[1m\e[32m3. Buat wallet Arweave ... \e[0m" && sleep 1
-cargo run --bin wallet-tool create > wallet.json
+cd validator-rust && cargo run --bin wallet-tool create > wallet.json
