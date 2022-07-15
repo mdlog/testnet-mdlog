@@ -17,7 +17,7 @@ echo -e "\e[1m\e[32m1. Update dan Instalasi Docker & Docker-Compose... \e[0m" &&
 #!/bin/bash
 # update
 sudo apt-get update
-sudo apt-install cargo
+sudo apt-get install cargo
 sudo apt-get install screen
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
