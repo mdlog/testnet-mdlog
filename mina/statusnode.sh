@@ -8,9 +8,9 @@ while true
 do
 clear
 cd ~
-global_block=$(mina client status | grep "Global number of Accounts" | awk '{ print $3 }')
+global_block=$(cd && mina client status | grep "Global number of Accounts" | awk '{ print $3 }')
 block_node=${node_status}
-block=$(mina client status | grep "Block height" | awk '{ print $3 }')
+block=$(cd && mina client status | grep "Block height" | awk '{ print $3 }')
 block_height=${block}
 AKTIF=" ✅ NODE: $ADDRESS Aktif "\==" Global number of Accounts: $block_node "\==" Block height: $block_height "
 # AKTIF=" ✅ NODE: $ADDRESS Aktif "\==" Final balance: $int_final_balance "\==" Candidate balance: $int_candidate_balance "\==" Locked balance: $int_locked_balance "\==" Active rolls: $int_rolls "\==" Final rolls: $int_final_rolls "\==" Candidate rolls: $int_candidate_rolls"
@@ -22,7 +22,7 @@ TIDAK=" ❌ NODE: $ADDRESS Aktif "\==" Global number of Accounts: $block_node "\
       curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text=$TIDAK"
  fi
    printf "sleep"
-       for((sec=0; sec<1800; sec++))
+       for((sec=0; sec<3; sec++))
        do
               printf "."
                sleep 1
