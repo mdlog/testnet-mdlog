@@ -8,7 +8,7 @@ while true
 do
 clear
 cd ~
-global_block=$(cd && mina client status | grep "Global number of Accounts" | awk '{ print $3 }')
+global_block=$(cd && mina client status | grep "Global number of Accounts" | awk '{ print $5 }')
 block_node=${node_status}
 block=$(cd && mina client status | grep "Block height" | awk '{ print $3 }')
 block_height=${block}
