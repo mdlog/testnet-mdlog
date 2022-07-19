@@ -37,15 +37,15 @@ rm -rf massa_TEST.11.3_release_linux.tar.gz
 echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
 # update
 sudo apt-get update
-sudo apt-get install clang
-sudo apt-get -y install librocksdb-dev
-sudo apt-get install screen
+sudo apt-get install clang -y
+sudo apt-get install librocksdb-dev -y
+sudo apt-get install screen -y
 
 echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
 
 # packages
-sudo apt install pkg-config curl git build-essential libssl-dev libclang-dev
-sudo apt-get install librocksdb-dev build-essential
+sudo apt install pkg-config curl git build-essential libssl-dev libclang-dev -y
+sudo apt-get install librocksdb-dev build-essential -y
 
 echo -e "\e[1m\e[32m3. Downloading and building massa binary... \e[0m" && sleep 1
 # download binary dan ekstrak
