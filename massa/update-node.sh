@@ -18,7 +18,7 @@ cd ~
 rm -rf buyrolls.sh
 
 mv massa massaold
-wget https://github.com/massalabs/massa/releases/download/TEST.12.1/massa_TEST.12.2_release_linux.tar.gz
+wget https://github.com/massalabs/massa/releases/download/TEST.12.2/massa_TEST.12.2_release_linux.tar.gz
 tar xvzf massa_TEST.12.2_release_linux.tar.gz
 clear
 cd ~
