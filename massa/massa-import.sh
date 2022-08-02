@@ -89,7 +89,7 @@ systemctl status massad
 
 #!/bin/bash
 if [ ! $PRIVKEY ]; then
-read -p "Input Priv Key Kamu: " PRIVKEY
+read -p "Input Secret Key Kamu: " PRIVKEY
 echo 'export PRIVKEY='\"${PRIVKEY}\" >> $HOME/.bash_profile
 fi
 echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
