@@ -18,8 +18,8 @@ cd ~
 rm -rf buyrolls.sh
 
 mv massa massaold
-wget https://github.com/massalabs/massa/releases/download/TEST.12.2/massa_TEST.12.2_release_linux.tar.gz
-tar xvzf massa_TEST.12.2_release_linux.tar.gz
+wget https://github.com/massalabs/massa/releases/download/TEST.13.0/massa_TEST.13.0_release_linux.tar.gz
+tar xvzf massa_TEST.13.0_release_linux.tar.gz
 clear
 cd ~
 cd $HOME/massa/massa-node/config/ && rm -rf node_privkey.key
