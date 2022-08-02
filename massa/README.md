@@ -28,7 +28,7 @@ Anda dapat mengatur node Anda dalam beberapa menit dengan menggunakan skrip otom
 ```
 wget -O massa-testnet.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-testnet.sh && chmod +x massa-testnet.sh && ./massa-testnet.sh
 ```
-> ## Gunakan perintah dibawah ini jika anda sudah memiliki ```Wallet Address``` Massa dan ingin mengimport ```Private Key```.
+> ## Gunakan perintah dibawah ini jika anda sudah memiliki ```Wallet Address``` Massa dan ingin mengimport ```Secret Key```.
 
 ```
 wget -O massa-import.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/massa-import.sh && chmod +x massa-import.sh && ./massa-import.sh
