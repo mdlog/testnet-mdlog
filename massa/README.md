@@ -51,11 +51,12 @@ sudo tail -f /root/massa/massa-node/logs.txt
 
 # Update Node
 
-Jika anda menjalankan Node secara Otomatis seperti diatas (OPSI 2) silahkan jalan perintah dibawah ini untuk melakukan update terhadap Node anda
+Jika anda menjalankan Node secara Otomatis seperti diatas (OPSI 2) saat run node ```Episode 12``` anda bisa menggunakan command dibawah ini. silahkan jalan perintah dibawah ini untuk melakukan update terhadap Node anda
 
 ``` 
 wget -O update-node.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/update-node.sh && chmod +x update-node.sh && ./update-node.sh
 ```
+Dengan menjalankan perintah update anda telah memperbaharui versi node anda dari versi 12 ke versi 13 sekaligus memindahkan wallet dan Node yang ada di versi 12 ke versi 13
 
 Setelah muncul tulisan ```Sleep.....``` di terminal, silahkan ```CTRL + A + D``` di keyboard anda
 
