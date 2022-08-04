@@ -51,7 +51,7 @@ sudo tail -f /root/massa/massa-node/logs.txt
 
 # Update Node
 
-Jika anda menjalankan Node secara Otomatis seperti diatas (OPSI 2) saat run node ```Episode 12``` anda bisa menggunakan command dibawah ini. silahkan jalan perintah dibawah ini untuk melakukan update terhadap Node anda
+Jika anda menjalankan Node secara Otomatis seperti diatas (OPSI 2) saat menjalalankan node ```Episode 12``` anda bisa menggunakan command dibawah ini, dengan catatan Node ```Versi 12``` anda berada didalam server VPS dan anda mau updatenya ke ```versi 13```. Silahkan jalan perintah dibawah ini untuk melakukan update terhadap Node anda
 
 ``` 
 wget -O update-node.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/update-node.sh && chmod +x update-node.sh && ./update-node.sh
