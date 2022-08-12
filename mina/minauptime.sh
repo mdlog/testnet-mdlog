@@ -10,7 +10,7 @@ clear
 cd ~
 
 
-data_url=$(curl -X GET "http://uptime.minaprotocol.com/uptimescore/B62qj5Mv8tyQ7BSmAEeoHcTR1dwYpwxVy2GXSoajgSfyM3uUDUAiR6R/sidecar/2022-08-11T13%3A32%3A35Z/" -H "accept: application/json" | grep "block_producer_key" | awk '{ print $1 }')
+data_url=(curl -X GET "http://uptime.minaprotocol.com/uptimescore/B62qj5Mv8tyQ7BSmAEeoHcTR1dwYpwxVy2GXSoajgSfyM3uUDUAiR6R/sidecar/2022-08-11T13%3A32%3A35Z/" -H "accept: application/json" | grep "block_producer_key" | awk '{ print $1 }')
 data=$(data_url)
 
 # global_block=$(cd && mina client status | grep "Global number of accounts" | awk '{ print $5 }')
