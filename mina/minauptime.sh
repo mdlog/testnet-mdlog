@@ -10,8 +10,8 @@ clear
 cd ~
 
 
-# data_surl= curl -X GET "http://uptime.minaprotocol.com/uptimescore/B62qj5Mv8tyQ7BSmAEeoHcTR1dwYpwxVy2GXSoajgSfyM3uUDUAiR6R/sidecar/2022-08-11T13%3A32%3A35Z/" -H "accept: application/json"
-
+data_url=$(curl -X GET "http://uptime.minaprotocol.com/uptimescore/B62qj5Mv8tyQ7BSmAEeoHcTR1dwYpwxVy2GXSoajgSfyM3uUDUAiR6R/sidecar/2022-08-11T13%3A32%3A35Z/" -H "accept: application/json" | grep "block_producer_key" | awk '{ print $1 }')
+data=$(data_url)
 
 # global_block=$(cd && mina client status | grep "Global number of accounts" | awk '{ print $5 }')
 # block_node=${global_block}
@@ -32,4 +32,4 @@ cd ~
 #      printf "\n"
 # done
 
-curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text=$DATE"
+curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$ID" -d "parse_mode=html" -d "text=$data"
