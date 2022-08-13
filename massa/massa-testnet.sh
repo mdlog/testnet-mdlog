@@ -40,6 +40,7 @@ sudo apt-get update
 sudo apt-get install clang -y
 sudo apt-get install librocksdb-dev -y
 sudo apt-get install screen -y
+sudo apt-get install libssl -y
 
 echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
 
