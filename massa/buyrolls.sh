@@ -16,6 +16,8 @@ rm -rf update-node.sh
 declare -i int_balance
 declare -i lc
 
+
+
 while true
 do
 
