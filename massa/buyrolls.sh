@@ -25,16 +25,19 @@ if [ ! -e $HOME/massa/massa-client/massa-client ]; then
 fi
 chmod +x $HOME/massa/massa-client/massa-client
 cd $HOME/massa/massa-client/
-wallet_temp=$(./massa-client wallet_info -p $PASSWORDKU | grep Address)
-wallet=${wallet_temp:9}
-echo $wallet_temp;
+wallet_temp=$(./massa-client wallet_info -p $PASSWORDKU | grep "Address" | awk '{ print $2 }')
+wallet=${wallet_temp};
+echo "Address is: "$wallet;
 if [ ! "$wallet" ];then
    echo "Wallet not found. Please check again";
 fi
 
-balance=$(./massa-client wallet_info -p $PASSWORDKU | grep "Final balance" | awk '{ print $3 }')
-echo "Balance is: " $balance;
-int_balance=${balance/\.*}
+balance=$(./massa-client wallet_info -p $PASSWORDKU | grep -oP "Sequential balance: final=\K\S+" | awk '{ print $1 }')
+balances=${balance::-1};
+echo "Balances is; "$balances;
+
+# echo "Balance is: " $balances;
+int_balance=${balances};
 if [ $int_balance -gt "99" ]; then
         resp=$(./massa-client buy_rolls $wallet $(($int_balance/100)) 0 -p $PASSWORDKU )
         echo $resp
