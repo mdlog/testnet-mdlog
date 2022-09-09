@@ -56,7 +56,7 @@ Jika anda menggunakan cara otomatis (OPSI 2) saat menjalankan node ```Episode 13
 ``` 
 wget -O update-node.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/update-node.sh && chmod +x update-node.sh && ./update-node.sh
 ```
-Dengan menjalankan perintah ```Update Node``` anda telah memperbaharui versi node anda dari versi 13 ke versi 14 sekaligus memindahkan wallet dan Node yang ada di versi 12 ke versi 13, jadi anda tidak perlu membuat wallet baru lagi.
+Dengan menjalankan perintah ```Update Node``` anda telah memperbaharui versi node anda dari versi 13 ke versi 14 sekaligus memindahkan wallet dan Node yang ada di versi 13 ke versi 14, jadi anda tidak perlu membuat wallet baru lagi.
 
 Setelah muncul tulisan ```Sleep.....``` di terminal, silahkan ```CTRL + A + D``` di keyboard anda
 
