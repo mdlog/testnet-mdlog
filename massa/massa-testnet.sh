@@ -12,6 +12,7 @@ echo -e "\e[0m"
 echo "================================================================================="
 
 sleep 1
+systemctl stop massad
 
 # set vars
 if [ ! $IP_SERVER ]; then
