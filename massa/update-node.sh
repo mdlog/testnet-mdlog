@@ -22,8 +22,8 @@ rm -rf massa_TEST.13.0_release_linux.tar.gz
 rm -rf massa_TEST.14.0_release_linux.tar.gz
 
 mv massa massaold
-wget https://github.com/massalabs/massa/releases/download/TEST.14.0/massa_TEST.14.0_release_linux.tar.gz
-tar xvzf massa_TEST.14.0_release_linux.tar.gz
+wget https://github.com/massalabs/massa/releases/download/TEST.14.1/massa_TEST.14.1_release_linux.tar.gz
+tar xvzf massa_TEST.14.1_release_linux.tar.gz
 clear
 cd ~
 cd $HOME/massa/massa-node/config/ && rm -rf node_privkey.key
