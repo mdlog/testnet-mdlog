@@ -45,7 +45,7 @@ sudo apt-get install libssl-dev -y
 echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
 
 # packages
-sudo apt install pkg-config curl git build-essential libssl-dev libclang-dev
+sudo apt install pkg-config curl git build-essential libssl-dev libclang-dev -y
 sudo apt-get install librocksdb-dev build-essential -y
 
 echo -e "\e[1m\e[32m3. Downloading and building massa binary... \e[0m" && sleep 1
