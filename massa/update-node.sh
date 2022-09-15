@@ -21,6 +21,7 @@ sudo apt-get install libssl-dev -y
 rm -rf massa_TEST.14.0_release_linux.tar.gz
 rm -rf buyrolls.sh
 rm -rf /root/massa/massa-node/storage/peers.json
+rm -rf ~/etc/systemd/system/massad.service
 
 mv massa massaold
 wget https://github.com/massalabs/massa/releases/download/TEST.14.1/massa_TEST.14.1_release_linux.tar.gz
