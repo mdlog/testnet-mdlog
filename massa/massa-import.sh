@@ -112,6 +112,7 @@ chmod +x $HOME/massa/massa-client/massa-client
 cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORDKU | grep Address )
 cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client wallet_add_secret_keys $KEY -p $PASSWORDKU | grep "Secret Key" )
 # cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_add_secret_keys $PRIVKEY -p $PASSWORDKU | grep "Secret Key" | awk '{ print $2 }')
+sleep 5
 
 clear
 cd $HOME
