@@ -108,6 +108,5 @@ cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_generate
 clear
 sleep 180
 
-#!/bin/bash
 cd $HOME
 wget -O buyrolls.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/buyrolls.sh && chmod +x buyrolls.sh && screen -xR -S buyrolls ./buyrolls.sh
