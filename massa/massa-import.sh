@@ -61,6 +61,8 @@ cd $HOME
 cd massa/massa-node/config
 wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
 sed -i -e "s/^routable_ip *=.*/routable_ip = \"$IP_SERVER\"/" $HOME/massa/massa-node/config/config.toml
+cd massa/massa-node/base_config && rm -rf config.toml
+wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
 
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
