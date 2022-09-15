@@ -19,6 +19,7 @@ rm -rf buyrolls.sh
 sudo apt-get update
 sudo apt-get install libssl-dev -y
 rm -rf massa_TEST.14.0_release_linux.tar.gz
+rm -rf buyrolls.sh
 
 mv massa massaold
 wget https://github.com/massalabs/massa/releases/download/TEST.14.1/massa_TEST.14.1_release_linux.tar.gz
