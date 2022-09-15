@@ -114,6 +114,6 @@ cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client wallet_add_secre
 # cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_add_secret_keys $PRIVKEY -p $PASSWORDKU | grep "Secret Key" | awk '{ print $2 }')
 sleep 120
 clear
-#!/bin/bash
+
 cd $HOME
 wget -O buyrolls.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/buyrolls.sh && chmod +x buyrolls.sh && screen -xR -S buyrolls ./buyrolls.sh
