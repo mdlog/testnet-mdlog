@@ -34,7 +34,6 @@ rm -rf massa-test.sh
 rm -rf massa-testnet.sh
 rm -rf massa_TEST.14.0_release_linux.tar.gz
 rm -rf buyrolls.sh
-rm -rf ~/etc/systemd/system/massad.service
 
 echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
 # update
