@@ -106,7 +106,7 @@ chmod +x $HOME/massa/massa-client/massa-client
 cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORD | grep Address )
 cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_generate_secret_key -p $PASSWORD | grep Address | awk '{ print $2 }')
 clear
-sleep 120
+sleep 180
 
 #!/bin/bash
 cd $HOME
