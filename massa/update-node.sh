@@ -35,6 +35,10 @@ cp $HOME/massaold/massa-node/config/config.toml $HOME/massa/massa-node/config/co
 cp $HOME/massaold/massa-node/config/node_privkey.key $HOME/massa/massa-node/config/node_privkey.key
 cp $HOME/massaold/massa-client/wallet.dat $HOME/massa/massa-client/wallet.dat
 
+cd $HOME
+cd massa/massa-node/base_config && rm -rf config.toml
+wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
+
 
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
