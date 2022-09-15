@@ -64,6 +64,7 @@ systemctl daemon-reload
 systemctl enable massad 
 systemctl restart massad
 systemctl status massad
+sleep 120
 
 #!/bin/bash
 clear
