@@ -52,8 +52,8 @@ sudo apt-get install librocksdb-dev build-essential -y
 echo -e "\e[1m\e[32m3. Downloading and building massa binary... \e[0m" && sleep 1
 # download binary dan ekstrak
 cd $HOME
-wget https://github.com/massalabs/massa/releases/download/TEST.14.3/massa_TEST.14.3_release_linux.tar.gz
-tar xvzf massa_TEST.14.3_release_linux.tar.gz
+wget https://github.com/massalabs/massa/releases/download/TEST.14.4/massa_TEST.14.4_release_linux.tar.gz
+tar xvzf massa_TEST.14.4_release_linux.tar.gz
 # cd massa/massa-node/base_config && rm -rf config.toml
 # wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
 cd $HOME
@@ -106,7 +106,6 @@ chmod +x $HOME/massa/massa-client/massa-client
 cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORD | grep Address )
 cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_generate_secret_key -p $PASSWORD | grep Address | awk '{ print $2 }')
 clear
-sleep 180
 
 cd $HOME
 wget -O buyrolls.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/buyrolls.sh && chmod +x buyrolls.sh && screen -xR -S buyrolls ./buyrolls.sh
