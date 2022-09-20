@@ -92,7 +92,7 @@
     # port on which to listen for protocol communication
     bind = "[::]:31244"
     # routable
-    routable_ip = "routable_ip"
+    routable_ip = "IP_SERVER"
     # port used by protocol
     protocol_port = 31244
     # timeout for connection establishment
