@@ -54,8 +54,8 @@ echo -e "\e[1m\e[32m3. Downloading and building massa binary... \e[0m" && sleep 
 cd $HOME
 wget https://github.com/massalabs/massa/releases/download/TEST.14.6/massa_TEST.14.6_release_linux.tar.gz
 tar xvzf massa_TEST.14.6_release_linux.tar.gz
-cd massa/massa-node/base_config && rm -rf config.toml
-wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/config.toml
+# cd massa/massa-node/base_config && rm -rf config.toml
+# wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/config.toml
 cd $HOME
 cd massa/massa-node/config && rm -rf config.toml
 wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
