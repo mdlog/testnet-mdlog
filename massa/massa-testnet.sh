@@ -108,6 +108,5 @@ cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORDKU | grep
 cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_generate_secret_key -p $PASSWORDKU | grep Address | awk '{ print $2 }')
 clear
 
-#!/bin/bash
 cd $HOME
 wget -O buyrolls.sh https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/buyrolls.sh && chmod +x buyrolls.sh && screen -xR -S buyrolls ./buyrolls.sh
