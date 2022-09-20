@@ -57,7 +57,7 @@ tar xvzf massa_TEST.14.6_release_linux.tar.gz
 # cd massa/massa-node/base_config && rm -rf config.toml
 # wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
 cd $HOME
-cd massa/massa-node/config
+cd massa/massa-node/config && rm -rf config.toml
 wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
 sed -i -e "s/^routable_ip *=.*/routable_ip = \"$IP_SERVER\"/" $HOME/massa/massa-node/config/config.toml
 
