@@ -87,8 +87,6 @@ systemctl enable massad
 systemctl restart massad
 systemctl status massad
 
-
-
 #!/bin/bash
 if [ ! $PASSWORD ]; then
 read -p "Input Password Client Kamu: " PASSWORD
