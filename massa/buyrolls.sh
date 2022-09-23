@@ -38,7 +38,7 @@ balances=${balance::-1};
 echo "Balances is; "$balances;
 
 # echo "Balance is: " $balances;
-int_balance=${balances};
+int_balance=${balances::-3};
 if [ $int_balance -gt "99" ]; then
         resp=$(./massa-client buy_rolls $wallet $(($int_balance/100)) 0 -p $PASSWORDKU )
         echo $resp
