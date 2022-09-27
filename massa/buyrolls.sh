@@ -33,12 +33,16 @@ if [ ! "$wallet" ];then
    echo "Wallet not found. Please check again";
 fi
 
+
 balance=$(./massa-client wallet_info -p $PASSWORDKU | grep -oP "Sequential balance: final=\K\S+" | awk '{ print $1 }')
 balances=${balance::-1};
-echo "Balances is; "$balances;
+# balancess=$("%.2f" $balances)
+bal=${balances};
+# balances=$($balance | awk '{ printf("%d\n",$1 + 0.5)}')
+echo "Balances is; "$bal;
 
 # echo "Balance is: " $balances;
-int_balance=${balances};
+int_balance=${balancess};
 if [ $int_balance -gt "99" ]; then
         resp=$(./massa-client buy_rolls $wallet $(($int_balance/100)) 0 -p $PASSWORDKU )
         echo $resp
