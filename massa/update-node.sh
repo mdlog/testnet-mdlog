@@ -13,7 +13,6 @@ echo -e "\e[0m"
 echo "================================================================================="
 PASSWORDKU=$PASSWORD
 sleep 1
-systemctl stop massad
 cd ~
 rm -rf buyrolls.sh
 sudo apt-get update
