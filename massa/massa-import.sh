@@ -28,13 +28,6 @@ echo -e "Password Kamu: \e[1m\e[32m${PASSWORD}\e[0m"
 echo '================================================='
 sleep 1
 
-# delete folder
-rm -rf massa
-rm -rf massa-test.sh
-rm -rf massa-testnet.sh
-rm -rf massa_TEST.14.8_release_linux.tar.gz
-rm -rf buyrolls.sh
-
 echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
 # update
 sudo apt-get update
@@ -50,18 +43,16 @@ sudo apt install pkg-config curl git build-essential libssl-dev libclang-dev -y
 sudo apt-get install librocksdb-dev build-essential -y
 
 echo -e "\e[1m\e[32m3. Downloading and building massa binary... \e[0m" && sleep 1
+
 # download binary dan ekstrak
 cd $HOME
 wget https://github.com/massalabs/massa/releases/download/TEST.15.0/massa_TEST.15.0_release_linux.tar.gz
 tar xvzf massa_TEST.15.0_release_linux.tar.gz
-# cd massa/massa-node/base_config && rm -rf config.toml
-# wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/config.toml
+
 cd $HOME
 cd massa/massa-node/config
 wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
 sed -i -e "s/^routable_ip *=.*/routable_ip = \"$IP_SERVER\"/" $HOME/massa/massa-node/config/config.toml
-cd massa/massa-node/base_config && rm -rf config.toml
-wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/massa/config.toml
 
 sudo tee /root/massa/massa-node/run.sh > /dev/null <<EOF
 #!/bin/bash
