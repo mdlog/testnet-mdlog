@@ -45,7 +45,7 @@ bal=${balances};
 echo "Balances is; "$bal;
 
 int_balance=${bal%\.*};
-if [ $int_balances -eq "0," ]; then
+if [ $int_balances = 0 ]; then
         echo " Insufficient wallet"
 elif [ $int_balance -gt "99" ]; then
         resp=$(./massa-client buy_rolls $wallet $(($int_balance/100)) 0 -p $PASSWORDKU )
