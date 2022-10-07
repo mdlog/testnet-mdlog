@@ -32,15 +32,22 @@ echo "Address is: "$wallet;
 if [ ! "$wallet" ];then
    echo "Wallet not found. Please check again";
 fi
+
+
+cd $HOME/massa/massa-client
 secret_keys=$(./massa-client wallet_info -p $PASSWORDKU | grep "Secret key" | awk '{ print $2 }')
-add_node= node_add_staking_secret_keys $secret_keys
+cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client node_add_staking_secret_keys $secret_keys -p $PASSWORDKU)
+
+cd $HOME/massa/massa-client
 balance=$(./massa-client wallet_info -p $PASSWORDKU | grep -oP "Balance: final=\K\S+" | awk '{ print $1 }')
-balances=${balance%\.*};
+balances=${balance};
 bal=${balances};
 echo "Balances is; "$bal;
 
 int_balance=${bal%\.*};
-if [ $int_balance -gt "99" ]; then
+if [ $int_balances -eq "0," ]; then
+        echo " Insufficient wallet"
+elif [ $int_balance -gt "99" ]; then
         resp=$(./massa-client buy_rolls $wallet $(($int_balance/100)) 0 -p $PASSWORDKU )
         echo $resp
 fi
