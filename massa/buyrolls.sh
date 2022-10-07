@@ -32,7 +32,8 @@ echo "Address is: "$wallet;
 if [ ! "$wallet" ];then
    echo "Wallet not found. Please check again";
 fi
-
+secret_keys=$(./massa-client wallet_info -p $PASSWORDKU | grep "Secret key" | awk '{ print $2 }')
+add_node= node_add_staking_secret_keys $secret_keys
 balance=$(./massa-client wallet_info -p $PASSWORDKU | grep -oP "Balance: final=\K\S+" | awk '{ print $1 }')
 balances=${balance%\.*};
 bal=${balances};
