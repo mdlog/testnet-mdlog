@@ -35,17 +35,17 @@ fi
 
 
 cd $HOME/massa/massa-client
-secret_keys=$(./massa-client wallet_info -p $PASSWORDKU | grep "Secret key" | awk '{ print $2 }')
-cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client node_add_staking_secret_keys $secret_keys -p $PASSWORDKU)
+secret_keys=$(./massa-client wallet_info -p $PASSWORDKU | grep "Secret key" | awk '{ print $3 }')
+cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client -p $PASSWORDKU node_add_staking_secret_keys $secret_keys )
 
 cd $HOME/massa/massa-client
 balance=$(./massa-client wallet_info -p $PASSWORDKU | grep -oP "Balance: final=\K\S+" | awk '{ print $1 }')
 balances=${balance};
-bal=${balances};
+bal=${balances::-1};
 echo "Balances is; "$bal;
 
 int_balance=${bal%\.*};
-if [ $int_balances = 0 ]; then
+if [ $int_balance = "0" ]; then
         echo " Insufficient wallet"
 elif [ $int_balance -gt "99" ]; then
         resp=$(./massa-client buy_rolls $wallet $(($int_balance/100)) 0 -p $PASSWORDKU )
