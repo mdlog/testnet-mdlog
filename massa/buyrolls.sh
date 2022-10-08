@@ -41,11 +41,11 @@ cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client -p $PASSWORDKU n
 cd $HOME/massa/massa-client
 balance=$(./massa-client wallet_info -p $PASSWORDKU | grep -oP "Balance: final=\K\S+" | awk '{ print $1 }')
 balances=${balance};
-bal=${balances::-1};
+bal=${balances};
 echo "Balances is; "$bal;
 
 int_balance=${bal%\.*};
-if [ $int_balance = "0" ]; then
+if [ $int_balance = " " ]; then
         echo " Insufficient wallet"
 elif [ $int_balance -gt "99" ]; then
         resp=$(./massa-client buy_rolls $wallet $(($int_balance/100)) 0 -p $PASSWORDKU )
