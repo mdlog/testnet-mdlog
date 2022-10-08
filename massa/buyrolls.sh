@@ -41,7 +41,7 @@ cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client -p $PASSWORDKU n
 cd $HOME/massa/massa-client
 balance=$(./massa-client wallet_info -p $PASSWORDKU | grep -oP "Balance: final=\K\S+" | awk '{ print $1 }')
 balances=${balance};
-bal=${balances};
+bal=${balances::-1};
 echo "Balances is; "$bal;
 
 int_balance=${bal%\.*};
