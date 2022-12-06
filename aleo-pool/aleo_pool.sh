@@ -23,7 +23,7 @@ echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 
 # Install the latest version of Rust using rustup
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -1
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
 
 # update and install git clang libssl-dev pkg-config
 sudo apt update
