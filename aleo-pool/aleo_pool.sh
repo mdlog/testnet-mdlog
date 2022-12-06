@@ -23,11 +23,11 @@ echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 
 # Install the latest version of Rust using rustup
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -1
 
 # update and install git clang libssl-dev pkg-config
 sudo apt update
-sudo apt install git clang libssl-dev pkg-config --no-install-recommends
+sudo apt install git clang libssl-dev pkg-config --no-install-recommends -y
 
 # Clone and build the prover
 git clone https://github.com/HarukaMa/aleo-prover -b testnet3-new
