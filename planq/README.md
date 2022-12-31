@@ -1,4 +1,4 @@
-wget https://raw.githubusercontent.com/Staketab/cosmos-tools/main/auto-withdraw-delegate/start.sh \
+wget https://raw.githubusercontent.com/mdlog/testnet-mdlog/main/planq/wd-matic.sh \
 && chmod +x start.sh \
 && ./start.sh -b BINARY -k KEY_NAME -s SLEEP_TIME -p RPC_PORT -t TG_TOKEN -c TG_CHANNEL
 
