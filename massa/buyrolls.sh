@@ -35,8 +35,7 @@ fi
 
 
 cd $HOME/massa/massa-client
-secret_keys=$(./massa-client wallet_info -p $PASSWORDKU | grep "Secret key" | awk '{ print $3 }')
-cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client -p $PASSWORDKU node_add_staking_secret_keys $secret_keys )
+cd $HOME/massa/massa-client && wallet_priv_key=$(./massa-client -p $PASSWORDKU node_start_staking $wallet )
 
 cd $HOME/massa/massa-client
 balance=$(./massa-client wallet_info -p $PASSWORDKU | grep -oP "Balance: final=\K\S+" | awk '{ print $1 }')
