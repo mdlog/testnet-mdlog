@@ -26,11 +26,11 @@ wget https://github.com/massalabs/massa/releases/download/TEST.19.3/massa_TEST.1
 tar xvzf massa_TEST.19.3_release_linux.tar.gz
 clear
 cd ~
-cd $HOME/massa/massa-node/config/ && rm -rf node_privkey.key
+cd $HOME/massa/massa-node/config/ && rm -rf staking_wallet.dat
 
 
 cp $HOME/massaold/massa-node/config/config.toml $HOME/massa/massa-node/config/config.toml
-cp $HOME/massaold/massa-node/config/node_privkey.key $HOME/massa/massa-node/config/node_privkey.key
+cp $HOME/massaold/massa-node/config/staking_wallet.dat $HOME/massa/massa-node/config/staking_wallet.dat
 cp $HOME/massaold/massa-client/wallet.dat $HOME/massa/massa-client/wallet.dat
 
 cd $HOME
