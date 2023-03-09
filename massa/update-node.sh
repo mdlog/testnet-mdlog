@@ -31,6 +31,7 @@ cd $HOME/massa/massa-node/config/ && rm -rf staking_wallet.dat
 
 
 cp $HOME/massaold/massa-node/config/config.toml $HOME/massa/massa-node/config/config.toml
+cp $HOME/massaold/massa-node/config/node_privkey.key $HOME/massa/massa-node/config/node_privkey.key
 cp $HOME/massaold/massa-node/config/staking_wallet.dat $HOME/massa/massa-node/config/staking_wallet.dat
 cp $HOME/massaold/massa-client/wallet.dat $HOME/massa/massa-client/wallet.dat
 
