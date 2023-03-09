@@ -28,7 +28,7 @@ echo -e "Password Kamu: \e[1m\e[32m${PASSWORD}\e[0m"
 echo '================================================='
 sleep 1
 
-# delete folder
+# delete directory
 rm -rf massa
 rm -rf massa-test.sh
 rm -rf massa-testnet.sh
