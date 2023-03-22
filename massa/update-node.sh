@@ -22,8 +22,9 @@ rm -rf buyrolls.sh
 rm -rf /root/massa/massa-node/storage/peers.json
 
 mv massa massaold
-wget https://github.com/massalabs/massa/releases/download/TEST.20.1/massa_TEST.20.1_release_linux.tar.gz
-tar xvzf massa_TEST.20.1_release_linux.tar.gz
+
+wget https://github.com/massalabs/massa/releases/download/TEST.20.2/massa_TEST.20.2_release_linux.tar.gz
+tar xvzf massa_TEST.20.2_release_linux.tar.gz
 
 clear
 cd ~
