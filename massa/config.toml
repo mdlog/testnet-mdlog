@@ -1,2 +1,2 @@
-[network]
+[protocol]
 routable_ip = "IP_SERVER"
