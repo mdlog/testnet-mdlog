@@ -90,19 +90,18 @@ systemctl restart massad
 #!/bin/bash
 if [ ! $PASSWORD ]; then
 read -p "Input Password Client Kamu: " PASSWORD
-echo 'export PASSWORD='\"${PASSWORD}\" >> $HOME/.bash_profile
+echo 'export PASSWORD='\${PASSWORD}\ >> $HOME/.bash_profile
 fi
 echo 'source $HOME/.bashrc' >> $HOME/.bash_profile
 . $HOME/.bash_profile
 
 echo -e "Password Client Kamu: \e[1m\e[32m${PASSWORD}\e[0m"
 echo '================================================='
-PASSWORDKU=$PASSWORD
 sleep 1
 # Generate New Wallet 
 
 chmod +x $HOME/massa/massa-client/massa-client
-cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORDKU | grep Address )
+cd $HOME/massa/massa-client && wallet_pss=$(./massa-client -p $PASSWORD | grep Address )
 cd $HOME/massa/massa-client && generate_address=$(./massa-client wallet_generate_secret_key -p $PASSWORDKU | grep Address | awk '{ print $2 }')
 sleep 30
 
