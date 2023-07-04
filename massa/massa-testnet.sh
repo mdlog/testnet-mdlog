@@ -87,7 +87,7 @@ systemctl enable massad
 systemctl restart massad
 # systemctl status massad
 
-sleep 60
+sleep 180
 # Generate New Wallet 
 
 chmod +x $HOME/massa/massa-client/massa-client
