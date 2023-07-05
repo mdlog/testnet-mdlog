@@ -47,8 +47,8 @@ echo -e "\e[1m\e[32m3. Downloading and building massa binary... \e[0m" && sleep 
 # download binary dan ekstrak
 cd $HOME
 
-wget https://github.com/massalabs/massa/releases/download/TEST.24.0/massa_TEST.24.0_release_linux.tar.gz
-tar xvzf massa_TEST.24.0_release_linux.tar.gz
+wget https://github.com/massalabs/massa/releases/download/TEST.24.1/massa_TEST.24.1_release_linux.tar.gz
+tar xvzf massa_TEST.24.1_release_linux.tar.gz
 
 cd $HOME
 cd massa/massa-node/config
