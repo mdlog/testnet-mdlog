@@ -23,8 +23,8 @@ rm -rf /root/massa/massa-node/storage/peers.json
 
 mv massa massaold
 
-wget https://github.com/massalabs/massa/releases/download/TEST.25.0/massa_TEST.25.0_release_linux.tar.gz
-tar xvzf massa_TEST.25.0_release_linux.tar.gz
+wget https://github.com/massalabs/massa/releases/download/TEST.25.1/massa_TEST.25.1_release_linux.tar.gz
+tar xvzf massa_TEST.25.1_release_linux.tar.gz
 
 clear
 cd ~
