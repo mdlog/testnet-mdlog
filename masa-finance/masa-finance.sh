@@ -44,4 +44,4 @@ conda create --name bittensor python
 conda activate bittensor
 pip install -r requirements.txt
 export PYTHONPATH=$PYTHONPATH:$(pwd)
-ch $HOME
+cd $HOME
