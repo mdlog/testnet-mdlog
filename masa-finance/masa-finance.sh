@@ -44,4 +44,6 @@ conda create --name bittensor python
 conda activate bittensor
 pip install -r requirements.txt
 export PYTHONPATH=$PYTHONPATH:$(pwd)
+sudo apt install npm -y
+sudo npm install pm2 -g
 cd $HOME
